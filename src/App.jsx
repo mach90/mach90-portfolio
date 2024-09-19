@@ -78,7 +78,7 @@ const projects = [
     techs: ["Webflow", "GSAP", "Spline", "Blender"],
     src1: PrimusImg1,
     src2: PrimusImg2,
-    link: "",
+    link: "https://prime-lite-plus.webflow.io/",
     github: "",
   },
   // {
