@@ -27,8 +27,8 @@ const projectsList = [
     title: "Travel Form Generator",
     status: "In development",
     version: "0.1.0",
-    description: "Create a Travel Form .pdf via a user friendly web form and React PDF.",
-    techs: ["React", "Tailwind", "React-pdf"],
+    description: "A web form that converts user input into a formatted and printable Travel Form (.pdf) using React-pdf library.",
+    techs: ["React", "Tailwind", "React-pdf", "Spline", "Blender"],
     src1: TravelFormGeneratorImg1,
     src2: TravelFormGeneratorImg2,
     link: "https://travelformgenerator.netlify.app/",
@@ -38,7 +38,7 @@ const projectsList = [
     title: "Bento Enviro",
     status: "In development",
     version: "0.1.0",
-    description: "Essential weather info and more about your area in a Bento UI layout.",
+    description: "Aggregating diverse weather and environmental data from multiple APIs and presenting it through a concise Bento-style UI.",
     techs: ["React", "Tailwind"],
     src1: BentoEnviroImg1,
     src2: BentoEnviroImg2,
@@ -69,11 +69,11 @@ const projectsList = [
   //   github: "",
   // },
   {
-    title: "Primus product page",
+    title: "Primus stove showcase",
     status: "In development",
     version: "0.1.0",
-    description: "Primus product page adaptation on Webflow",
-    techs: ["Webflow", "Figma", "Spline", "Blender"],
+    description: "Transformed a Primus stove e-commerce product page into a product showcase on Webflow, preserving the brand's visual identity while enhancing the presentation.",
+    techs: ["Figma", "Webflow", "Spline", "Blender"],
     src1: PrimusImg1,
     src2: PrimusImg2,
     link: "https://prime-lite-plus.webflow.io/",
@@ -82,11 +82,11 @@ const projectsList = [
 ]
 
 function Projects() {
-  const projectsContainerStyle = "mx-96 my-16 flex flex-col gap-12 justify-center items-center";
+  const projectsContainerStyle = "mx-4 lg:mx-[10%] xl:mx-[20%] my-16 flex flex-col gap-12 justify-center items-center";
   const projectsContainerTitleContainerStyle = "gap-2 items-center grid grid-cols-3";
-  const projectsContainerTitleStyle = "text-6xl font-black uppercase font-heading text-textdark";
+  const projectsContainerTitleStyle = "text-5xl xl:text-6xl font-black uppercase font-heading text-textdark col-span-full md:col-span-1";
   const projectsContainerTitleSpanStyle = "text-textmedium";
-  const projectsContainerPhraseStyle = "text-2xl font-default font-normal text-justify col-span-2";
+  const projectsContainerPhraseStyle = "text-2xl font-default font-normal text-justify col-span-full md:col-span-2";
   const projectsSliderContainerStyle = "slider-container w-full";
 
   const settings = { //https://react-slick.neostack.com/docs/example/

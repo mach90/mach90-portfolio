@@ -8,7 +8,7 @@ STYLES
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
 const projectContainerStyle = "font-default grid grid-cols-4 gap-2 h-[600px]";
 
-const projectInfosStyle = "flex flex-col gap-4 col-span-1";
+const projectInfosStyle = "flex flex-col gap-4 col-span-full lg:col-span-1";
 
 const projectInfosTitleStyle = "font-heading font-black uppercase text-3xl";
 
@@ -18,12 +18,10 @@ const projectInfosProgressPercentageStyle = "bg-medium text-textdark px-2 py-1";
 const projectInfosDescriptionStyle = "font-medium text-lg";
 const projectInfosTechsStyle = "flex flex-col gap-2";
 const projectInfosTechStyle = "flex flex-row gap-2 font-medium";
-const projectInfosLinksStyle = "flex flex-row gap-2 bg-dark px-2 py-1 text-textlight w-max";
+const projectInfosLinksStyle = "flex flex-row gap-2 bg-dark px-2 py-1 text-textlight w-max hover:bg-alternatedark";
 
-const projectScreenshotBigContainerStyle = "col-span-2 h-full";
-const projectScreenshotSmallContainerStyle = "col-span-1 h-full";
-
-const projectScreenshotImage = "";
+const projectScreenshotBigContainerStyle = "col-span-4 md:col-span-3 lg:col-span-2 h-full";
+const projectScreenshotSmallContainerStyle = "col-span-0 md:col-span-1 h-full";
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 PROJECT COMPONENT
@@ -56,11 +54,11 @@ export default function Project({title, description, status, version, techs, src
             </div>
 
             <div className={projectScreenshotBigContainerStyle}>
-                <img src={src1} alt={title} className={projectScreenshotImage}/>
+                <img src={src1} alt={title} />
             </div>
 
             <div className={projectScreenshotSmallContainerStyle}>
-                <img src={src2} alt={title} className={projectScreenshotImage}/>
+                <img src={src2} alt={title} />
             </div>
 
         </div>

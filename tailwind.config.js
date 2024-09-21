@@ -21,7 +21,7 @@ export default {
         textmedium: "#595959",
         textdark: "#000000",
         textdisplay: "#000000",
-        light: "#FFFFFF",
+        light: "#f4f4f4",
         medium: "#B1B1B1",
         dark: "#000000",
         accent: "#FFF500",
