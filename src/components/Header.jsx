@@ -18,7 +18,7 @@ function Header() {
     const headerCoordsNameStyle = "font-heading uppercase font-black text-xl";
     const headerCoordsInfoStyle = "font-default text-md";
     
-    const headerTitleStyle = "text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black uppercase font-heading text-customColor1 w-full text-center";
+    const headerTitleStyle = "text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black uppercase font-heading text-customColor1";
 
     const headerDescriptionContainerStyle = "w-full grid grid-cols-3 gap-2";
 
@@ -43,12 +43,12 @@ function Header() {
                     <p className={headerCoordsNameStyle}>mach90</p>
                     <p className={headerCoordsInfoStyle}>Toulouse, France</p>
                 </div>
-
-                <h1 className={headerTitleStyle}>Frontend Dev</h1>
+            
+                <h1 className={headerTitleStyle}>PORTFOLIO</h1>
 
                 <div className={headerDescriptionContainerStyle}>
                     <div className={headerDescriptionCardStyle}>
-                        <p className={headerDescriptionCardTextStyle}>Frontend noob creating webapps. Principled and detail-oriented, valuing quality and security.</p>
+                        <p className={headerDescriptionCardTextStyle}>Creating web apps and websites. Principled and detail-oriented, valuing quality and security.</p>
                         <div className={headerDescriptionCardTagsContainerStyle}>
                             {/* <p className={headerDescriptionTagStyle}>Technicien</p> */}
                             <p className={headerDescriptionTagStyle}>Frontend</p>
