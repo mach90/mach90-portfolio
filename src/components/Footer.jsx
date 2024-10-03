@@ -3,9 +3,9 @@ export default function Footer() {
 
     return (
         <>
-            <div className={footerStyle}>
+            <footer className={footerStyle}>
                 <p>© 2024 MACH90</p>
-            </div>
+            </footer>
         </>
     );
 }

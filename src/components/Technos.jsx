@@ -25,8 +25,9 @@ function Technos() {
     const technosListContainerStyle = "flex flex-col gap-2"
     const technosListTitleStyle = "uppercase font-heading font-semibold text-xl text-alternatelight border-b border-alternatelight";
     const technosListStyle = "text-textlight font-default font-light flex flex-col gap-2 text-sm sm:text-lg lg:text-2xl";
-    const technosListItemStyle = "flex flex-row gap-2 items-center";
-    const technosListItemLogoStyle = "text-textlight w-4 grayscale brightness-50";
+    const technosListItemStyle = "flex flex-row gap-2 items-center hover:bg-dark hover:bg-opacity-40 cursor-default";
+    const technosListItemLogoStyle = "text-textlight w-4";
+    // const technosListItemLogoStyle = "text-textlight w-4 grayscale brightness-50";
     
     /* //////////////////////////////////////////////////
     TECHNOS LIST
@@ -63,7 +64,7 @@ function Technos() {
     JSX
     ////////////////////////////////////////////////// */
     return (
-        <div className={technosContainerStyle}>
+        <side className={technosContainerStyle}>
             <h2 className={technosTitleStyle}>Technos</h2>
             <div className={technosListsContainerStyle}>
                 {technosLists.map((list, index) => (
@@ -80,7 +81,7 @@ function Technos() {
                     </div>
                 ))}
             </div>
-        </div>
+        </side>
     );
 };
 

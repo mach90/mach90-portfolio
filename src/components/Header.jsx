@@ -11,9 +11,10 @@ function Header() {
     /* //////////////////////////////////////////////////
     STYLES
     ////////////////////////////////////////////////// */
-    const headerContainerStyle = "mx-4 lg:mx-[10%] xl:mx-[20%] my-4 flex flex-col gap-2 justify-center items-center";
+    const headerContainerStyle = "mx-4 lg:mx-[10%] xl:mx-[20%] flex flex-col gap-2 justify-center items-center pt-12";
 
-    const headerCoordsContainerStyle = "flex flex-row justify-center gap-8 sm:gap-24 items-center w-full";
+    const headerCoordsContainerStyle = "flex flex-row justify-between sm:gap-24 items-center w-full border-b border-dark py-2";
+    const headerCoordsLogoContainerStyle = "flex flex-row gap-4"
     const headerCoordsLogoStyle = "h-6";
     const headerCoordsNameStyle = "font-heading uppercase font-black text-xl";
     const headerCoordsInfoStyle = "font-default text-md";
@@ -22,10 +23,10 @@ function Header() {
 
     const headerDescriptionContainerStyle = "w-full grid grid-cols-3 gap-2";
 
-    const headerDescriptionCardStyle = "w-full col-span-full md:col-span-1 flex flex-col gap-4 p-6 bg-grainyLight";
-    const headerDescriptionCardTextStyle = "font-default font-medium uppercase text-md lg:text-lg";
+    const headerDescriptionCardStyle = "w-full col-span-full md:col-span-1 flex flex-col gap-4 p-6 bg-dark";
+    const headerDescriptionCardTextStyle = "font-default font-medium text-textlight uppercase text-md lg:text-lg";
     const headerDescriptionCardTagsContainerStyle = "flex flex-row gap-2 font-heading uppercase font-bold text-textlight text-sm";
-    const headerDescriptionTagStyle = "bg-dark px-2 py-1";
+    const headerDescriptionTagStyle = "bg-accent px-2 py-1 text-textdark";
 
     const headerDescriptionProfileStyle = "w-full col-span-full md:col-span-2 bg-profileCasual bg-cover bg-center flex flex-col gap-2 justify-end items-end font-default text-textlight text-2xl p-4 min-h-60";
     const headerDescriptionProfileLinkStyle = "flex flex-row gap-1 justify-end items-center hover:underline";
@@ -36,11 +37,13 @@ function Header() {
     ////////////////////////////////////////////////// */
     return (
         <>
-            <div className={headerContainerStyle}>
+            <header className={headerContainerStyle}>
 
                 <div className={headerCoordsContainerStyle}>
-                    <img src={Logo} alt="Mach logo" className={headerCoordsLogoStyle} />
-                    <p className={headerCoordsNameStyle}>mach90</p>
+                    <div className={headerCoordsLogoContainerStyle}>
+                        <img src={Logo} alt="Mach logo" className={headerCoordsLogoStyle} />
+                        <p className={headerCoordsNameStyle}>mach90</p>
+                    </div>
                     <p className={headerCoordsInfoStyle}>Toulouse, France</p>
                 </div>
             
@@ -48,7 +51,7 @@ function Header() {
 
                 <div className={headerDescriptionContainerStyle}>
                     <div className={headerDescriptionCardStyle}>
-                        <p className={headerDescriptionCardTextStyle}>Creating web apps and websites. Principled and detail-oriented, valuing quality and security.</p>
+                        <p className={headerDescriptionCardTextStyle}>I craft web apps and websites, that I intend to be purposeful and immersive. //  Principled and detail-oriented, valuing quality and security.</p>
                         <div className={headerDescriptionCardTagsContainerStyle}>
                             {/* <p className={headerDescriptionTagStyle}>Technicien</p> */}
                             <p className={headerDescriptionTagStyle}>Frontend</p>
@@ -62,7 +65,7 @@ function Header() {
                         </a>
                     </div>
                 </div>
-            </div>
+            </header>
         </>
     );
 };

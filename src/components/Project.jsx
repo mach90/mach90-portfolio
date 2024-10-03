@@ -6,7 +6,7 @@ import { Cpu, Link, Code } from "lucide-react";
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 STYLES
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
-const projectContainerStyle = "font-default grid grid-cols-4 gap-2 h-[600px]";
+const projectContainerStyle = "font-default grid grid-cols-3 gap-12 px-12";
 
 const projectInfosStyle = "flex flex-col gap-4 col-span-full lg:col-span-1";
 
@@ -21,7 +21,7 @@ const projectInfosTechStyle = "flex flex-row gap-2 font-medium";
 const projectInfosLinksStyle = "flex flex-row gap-2 bg-dark px-2 py-1 text-textlight w-max hover:bg-alternatedark";
 
 const projectScreenshotBigContainerStyle = "col-span-4 md:col-span-3 lg:col-span-2 h-full";
-const projectScreenshotSmallContainerStyle = "col-span-0 md:col-span-1 h-full";
+// const projectScreenshotSmallContainerStyle = "col-span-0 md:col-span-1 h-full";
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 PROJECT COMPONENT
@@ -34,7 +34,7 @@ export default function Project({title, description, status, version, techs, src
         <div className={projectContainerStyle}>
             
             <div className={projectInfosStyle}>
-                <h1 className={projectInfosTitleStyle}>{title}</h1>
+                <h3 className={projectInfosTitleStyle}>{title}</h3>
                 
                 <div className={projectInfosProgressContainerStyle}>
                     <p className={projectInfosProgressStatusStyle}>{status}</p>
@@ -57,9 +57,9 @@ export default function Project({title, description, status, version, techs, src
                 <img src={src1} alt={title} />
             </div>
 
-            <div className={projectScreenshotSmallContainerStyle}>
+            {/* {src2 && <div className={projectScreenshotSmallContainerStyle}>
                 <img src={src2} alt={title} />
-            </div>
+            </div>} */}
 
         </div>
     );
