@@ -1,16 +1,16 @@
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 IMPORTS
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
-import { Cpu, Link, Code } from "lucide-react";
+import { IoExtensionPuzzle } from "react-icons/io5";
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 STYLES
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
-const projectGridContainerStyle = "font-default flex flex-col gap-2";
-const projectGridInfosContainerStyle = "relative";
-const projectGridInfosTitleStyle = "font-heading font-black uppercase text-lg flex flex-row gap-2 w-[50%]";
-const projectGridInfosDescriptionStyle = "font-medium text-sm";
-const projectGridInfosTechStyle = "flex flex-row gap-2 items-center text-xs border-2 rounded-lg border-dark text-textdark px-2 py-1 absolute top-0 right-0";
+const projectGridContainerStyle = "font-default flex flex-col gap-2 border border-medium p-2 rounded-md";
+const projectGridInfosContainerStyle = "relative flex flex-col";
+const projectGridInfosTitleStyle = "font-heading font-black uppercase text-lg flex flex-row w-[50%]";
+const projectGridInfosTechStyle = "flex flex-row items-center text-xs text-textdark absolute top-1 right-0 font-bold gap-1";
+const projectGridInfosDescriptionStyle = "font-medium text-sm border-t border-medium pt-2";
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 PROJECT COMPONENT
@@ -25,7 +25,7 @@ export default function ProjectGrid({title, description, status, version, techs,
             <div className={projectGridInfosContainerStyle}>
                 <h3 className={projectGridInfosTitleStyle}>
                     {title}
-                    <span className={projectGridInfosTechStyle}><Cpu size={12}/> {techs}</span>
+                    <span className={projectGridInfosTechStyle}><IoExtensionPuzzle size={12}/> {techs}</span>
                 </h3>
                 <p className={projectGridInfosDescriptionStyle}>{description}</p>
             </div>

@@ -1,7 +1,9 @@
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 IMPORTS
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
-import { Cpu, Link, Code } from "lucide-react";
+import { IoExtensionPuzzle } from "react-icons/io5";
+import { HiExternalLink } from "react-icons/hi";
+import { LuCode2 } from "react-icons/lu";
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 STYLES
@@ -45,12 +47,12 @@ export default function Project({title, description, status, version, techs, src
 
                 <div className={projectInfosTechsStyle}>
                     {techs.map((tech) => {
-                        return <div key={tech} className={projectInfosTechStyle}><Cpu /> {tech}</div>
+                        return <div key={tech} className={projectInfosTechStyle}><IoExtensionPuzzle /> {tech}</div>
                     })}
                 </div>
 
-                {link && <a className={projectInfosLinksStyle} href={link} target="_blank"><Link /> See live version</a>}
-                {github && <a className={projectInfosLinksStyle} href={github} target="_blank"><Code /> See source code</a>}
+                {link && <a className={projectInfosLinksStyle} href={link} target="_blank"><HiExternalLink /> See live version</a>}
+                {github && <a className={projectInfosLinksStyle} href={github} target="_blank"><LuCode2 /> See source code</a>}
             </div>
 
             <div className={projectScreenshotBigContainerStyle}>

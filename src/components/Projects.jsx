@@ -25,7 +25,8 @@ import UsePopcorn from "../img/projects/formation/P0310-usepopcorn.avif"
 import ReactQuiz from "../img/projects/formation/P0317-react-quiz.avif" 
 import Worldwise from "../img/projects/formation/P0319-worldwise.avif" 
 import FastReactPizza from "../img/projects/formation/P0323-fast-react-pizza.avif" 
-import { CircleArrowLeft, CircleArrowRight } from "lucide-react";
+
+import { AiFillLeftCircle, AiFillRightCircle } from "react-icons/ai";
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 PROJECTS DATA
@@ -199,7 +200,7 @@ function PrevArrow(props) {
     <button
       className={"hover:text-accent ease-in-out duration-300 text-textlight absolute top-[50%] left-[-20px] z-10 text-xl font-bold bg-dark rounded-full py-2 px-2"}
       onClick={onClick}
-    ><CircleArrowLeft /></button>
+    ><AiFillLeftCircle /></button>
   );
 }
 
@@ -209,7 +210,7 @@ function NextArrow(props) {
     <button
       className={"hover:text-accent ease-in-out duration-300 text-textlight absolute top-[50%] right-[-20px] z-10 text-xl font-bold bg-dark rounded-full py-2 px-2"}
       onClick={onClick}
-    ><CircleArrowRight /></button>
+    ><AiFillRightCircle /></button>
   );
 }
 
@@ -217,12 +218,14 @@ function NextArrow(props) {
 PROJECTS COMPONENT
 ████████████████████████████████████████████████████████████████████████████████████████████████████ */
 function Projects() {
-  const projectsContainerStyle = "mx-4 lg:mx-[10%] xl:mx-[20%] my-16 flex flex-col gap-16 justify-center items-center p-12 bg-light shadow-md";
-  const projectsContainerTitleContainerStyle = "gap-2 items-center grid grid-cols-3";
-  const projectsContainerTitleStyle = "text-5xl xl:text-6xl font-black uppercase font-heading text-textdark col-span-full md:col-span-1";
-  const projectsContainerTitleSpanStyle = "text-textmedium";
-  const projectsContainerPhraseStyle = "text-2xl font-default font-normal text-justify col-span-full md:col-span-2";
-  const projectsSliderContainerStyle = "slider-container w-full";
+  const projectsContainerStyle = "mx-4 lg:mx-[10%] xl:mx-[20%] my-8 flex flex-col gap-16 justify-center items-center p-12 bg-light shadow-md border border-dark rounded-md";
+
+  const projectsContainerTitleContainerStyle = "gap-2 items-center grid grid-cols-3 bg-red-600";
+  const projectsContainerTitleStyle = "text-5xl xl:text-6xl font-black uppercase font-heading text-textdark col-span-full md:col-span-1 bg-blue-600";
+  const projectsContainerTitleSpanStyle = "text-textlight bg-dark";
+  const projectsContainerPhraseStyle = "text-2xl font-default font-normal text-justify col-span-full md:col-span-2 bg-green-600";
+
+  const projectsSliderContainerStyle = "slider-container w-full border-l border-r border-medium";
   const projectsGridContainerStyle = "grid grid-cols-full md:grid-cols-2 xl:grid-cols-3 gap-8";
 
   const personalProjectsSliderSettings = { //https://react-slick.neostack.com/docs/example/
@@ -238,7 +241,7 @@ function Projects() {
 
   return (
       <>
-        <main className={projectsContainerStyle}>
+        <main id="main" className={projectsContainerStyle}>
 
           <div className={projectsContainerTitleContainerStyle}>
             <h2 className={projectsContainerTitleStyle}>Personal <span className={projectsContainerTitleSpanStyle}>Projects</span></h2>

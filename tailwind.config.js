@@ -25,14 +25,15 @@ export default {
         medium: "#B1B1B1",
         dark: "#000000",
         accent: "#FFF500",
-        background: "#f2f2f2",
-        alternatedark: "#282828",
+        background: "#e3e3e3",
         alternatelight: "#A0A0A0",
+        alternatemedium: "#3b3b3b",
+        alternatedark: "#282828",
       },
       backgroundImage: {
         'grainyLight': "url('img/grainybglight.avif')",
         'grainyMedium': "url('img/grainybgmedium.avif')",
-        'profileCasual': "url('img/profile-casual.avif')",
+        'profileCasual': "url('img/profile-casual.jpeg')",
         'plainBrand': "url('img/plainbrand.avif')",
       }
     },

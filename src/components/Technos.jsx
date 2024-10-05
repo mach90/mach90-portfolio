@@ -1,16 +1,17 @@
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 LOGOS IMPORTS
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
-import LogoJavascript from '../img/techlogos_js.png'
-import LogoReact from '../img/techlogos_react.png'
-import LogoWebflow from '../img/techlogos_webflow.png'
-import LogoFigma from '../img/techlogos_figma.png'
-import LogoPhotoshop from '../img/techlogos_ps.png'
-import LogoIllustrator from '../img/techlogos_ai.png'
-import LogoBlender from '../img/techlogos_blender.png'
-import LogoSubstancePainter from '../img/techlogos_pt.png'
-import LogoSpline from '../img/techlogos_spline.png'
-import LogoSolidworks from '../img/techlogos_3ds.png'
+import LogoJavascript from '../img/techlogos_js.png';
+import LogoReact from '../img/techlogos_react.png';
+import LogoWebflow from '../img/techlogos_webflow.png';
+import LogoFigma from '../img/techlogos_figma.png';
+import LogoPhotoshop from '../img/techlogos_ps.png';
+import LogoIllustrator from '../img/techlogos_ai.png';
+import LogoBlender from '../img/techlogos_blender.png';
+import LogoSubstancePainter from '../img/techlogos_pt.png';
+import LogoSpline from '../img/techlogos_spline.png';
+import LogoSolidworks from '../img/techlogos_3ds.png';
+import LogoRive from '../img/techlogos_rive.png';
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 TECHNOS COMPONENT
@@ -47,6 +48,7 @@ function Technos() {
                 { technoName: "Figma", technoLogo: LogoFigma },
                 { technoName: "Photoshop", technoLogo: LogoPhotoshop },
                 { technoName: "Illustrator", technoLogo: LogoIllustrator },
+                { technoName: "Rive", technoLogo: LogoRive },
             ]
         },
         {
@@ -64,7 +66,7 @@ function Technos() {
     JSX
     ////////////////////////////////////////////////// */
     return (
-        <side className={technosContainerStyle}>
+        <side id="side" className={technosContainerStyle}>
             <h2 className={technosTitleStyle}>Technos</h2>
             <div className={technosListsContainerStyle}>
                 {technosLists.map((list, index) => (
