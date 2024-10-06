@@ -35,6 +35,7 @@ export default {
         'grainyMedium': "url('img/grainybgmedium.avif')",
         'profileCasual': "url('img/profile-casual.jpeg')",
         'plainBrand': "url('img/plainbrand.avif')",
+        'background0': "url('img/background.svg')",
       }
     },
   },

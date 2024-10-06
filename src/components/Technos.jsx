@@ -66,7 +66,7 @@ function Technos() {
     JSX
     ////////////////////////////////////////////////// */
     return (
-        <side id="side" className={technosContainerStyle}>
+        <aside id="side" className={technosContainerStyle}>
             <h2 className={technosTitleStyle}>Technos</h2>
             <div className={technosListsContainerStyle}>
                 {technosLists.map((list, index) => (
@@ -83,7 +83,7 @@ function Technos() {
                     </div>
                 ))}
             </div>
-        </side>
+        </aside>
     );
 };
 

@@ -198,7 +198,7 @@ function PrevArrow(props) {
   const { onClick } = props;
   return (
     <button
-      className={"hover:text-accent ease-in-out duration-300 text-textlight absolute top-[50%] left-[-20px] z-10 text-xl font-bold bg-dark rounded-full py-2 px-2"}
+      className={"hover:text-accent ease-in-out duration-300 text-textlight absolute top-[50%] left-[-20px] z-0 text-xl font-bold bg-dark rounded-full py-2 px-2"}
       onClick={onClick}
     ><AiFillLeftCircle /></button>
   );
@@ -208,7 +208,7 @@ function NextArrow(props) {
   const { onClick } = props;
   return (
     <button
-      className={"hover:text-accent ease-in-out duration-300 text-textlight absolute top-[50%] right-[-20px] z-10 text-xl font-bold bg-dark rounded-full py-2 px-2"}
+      className={"hover:text-accent ease-in-out duration-300 text-textlight absolute top-[50%] right-[-20px] z-0 text-xl font-bold bg-dark rounded-full py-2 px-2"}
       onClick={onClick}
     ><AiFillRightCircle /></button>
   );
@@ -218,12 +218,12 @@ function NextArrow(props) {
 PROJECTS COMPONENT
 ████████████████████████████████████████████████████████████████████████████████████████████████████ */
 function Projects() {
-  const projectsContainerStyle = "mx-4 lg:mx-[10%] xl:mx-[20%] my-8 flex flex-col gap-16 justify-center items-center p-12 bg-light shadow-md border border-dark rounded-md";
+  const projectsContainerStyle = "mx-4 lg:mx-[10%] xl:mx-[20%] my-8 flex flex-col gap-16 justify-center items-center p-12 bg-light shadow-md border-2 border-dark rounded-md";
 
-  const projectsContainerTitleContainerStyle = "gap-2 items-center grid grid-cols-3 bg-red-600";
-  const projectsContainerTitleStyle = "text-5xl xl:text-6xl font-black uppercase font-heading text-textdark col-span-full md:col-span-1 bg-blue-600";
-  const projectsContainerTitleSpanStyle = "text-textlight bg-dark";
-  const projectsContainerPhraseStyle = "text-2xl font-default font-normal text-justify col-span-full md:col-span-2 bg-green-600";
+  const projectsContainerTitleContainerStyle = "gap-2 flex flex-col md:flex-row w-full gap-4 md:gap-12";
+  const projectsContainerTitleStyle = "text-5xl xl:text-6xl font-black uppercase font-heading text-textdark flex flex-col";
+  const projectsContainerTitleSpanStyle = "text-textdark";
+  const projectsContainerPhraseStyle = "text-xl md:text-2xl lg:text-3xl font-default font-normal text-justify";
 
   const projectsSliderContainerStyle = "slider-container w-full border-l border-r border-medium";
   const projectsGridContainerStyle = "grid grid-cols-full md:grid-cols-2 xl:grid-cols-3 gap-8";
