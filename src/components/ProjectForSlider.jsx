@@ -8,7 +8,7 @@ import { LuCode2 } from "react-icons/lu";
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 STYLES
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
-const projectContainerStyle = "font-default grid grid-cols-3 gap-8 px-12";
+const projectContainerStyle = "font-default gap-12";
 
 const projectInfosStyle = "flex flex-col gap-4 col-span-full lg:col-span-1";
 
@@ -28,18 +28,14 @@ const projectScreenshotBigContainerStyle = "col-span-4 md:col-span-3 lg:col-span
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 PROJECT COMPONENT
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
-export default function Project({title, description, status, version, techs, src1, src2, link, github}) {
+export default function ProjectForSlider({title, description, status, version, techs, src1, src2, link, github}) {
     /* //////////////////////////////////////////////////
     JSX
     ////////////////////////////////////////////////// */
     return (
         <div className={projectContainerStyle}>
             
-            <div className={projectScreenshotBigContainerStyle}>
-                <img src={src1} alt={title} />
-            </div>
-
-            <div className={projectInfosStyle}>
+            {/* <div className={projectInfosStyle}>
                 <h3 className={projectInfosTitleStyle}>{title}</h3>
                 
                 <div className={projectInfosProgressContainerStyle}>
@@ -57,6 +53,10 @@ export default function Project({title, description, status, version, techs, src
 
                 {link && <a className={projectInfosLinksStyle} href={link} target="_blank"><HiExternalLink /> See live version</a>}
                 {github && <a className={projectInfosLinksStyle} href={github} target="_blank"><LuCode2 /> See source code</a>}
+            </div> */}
+
+            <div className={projectScreenshotBigContainerStyle}>
+                <img src={src1} alt={title} />
             </div>
 
             {/* {src2 && <div className={projectScreenshotSmallContainerStyle}>

@@ -1,13 +1,13 @@
 # mach90 Portfolio
 
 ## TO FIX
-- [x] AVIF or webp !
-- [ ] Fix caroussel responsiveness and global responsiveness
+- [x] AVIF
+- [x] Fix caroussel responsiveness and global responsiveness
 
 ## TO DO
-- [x] Spline background
-- [ ] Skills I have mastered from roadmap.sh with link to corresponding roadmap
 - [ ] Some GSAP animations
+- [ ] Parallax
 - [ ] A hamburger menu
-- [ ] A dark mode ?
+- [ ] A dark mode
 - [ ] Animated projects when hovered
+- [ ] Protected mail contact

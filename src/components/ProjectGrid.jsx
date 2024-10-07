@@ -6,7 +6,7 @@ import { IoExtensionPuzzle } from "react-icons/io5";
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 STYLES
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
-const projectGridContainerStyle = "font-default flex flex-col gap-2 border border-medium p-2 rounded-md";
+const projectGridContainerStyle = "font-default flex flex-col gap-2 border border-medium p-2 rounded-md hover:bg-white hover:shadow-md";
 const projectGridInfosContainerStyle = "relative flex flex-col z-0";
 const projectGridInfosTitleStyle = "font-heading font-black uppercase text-lg flex flex-row w-[50%]";
 const projectGridInfosTechStyle = "flex flex-row items-center text-xs text-textdark absolute top-1 right-0 font-bold gap-1 z-0";

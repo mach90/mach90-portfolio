@@ -20,13 +20,13 @@ function Technos() {
     /* //////////////////////////////////////////////////
     STYLES
     ////////////////////////////////////////////////// */
-    const technosContainerStyle = "px-4 lg:px-[10%] xl:px-[20%] py-12 bg-grainyMedium flex flex-col xl:flex-row gap-12 justify-between";
-    const technosTitleStyle = "font-heading text-alternatelight uppercase text-5xl font-black";
-    const technosListsContainerStyle = "flex flex-col sm:flex-row gap-8 sm:gap-12 md:gap-16 lg:gap-24";
-    const technosListContainerStyle = "flex flex-col gap-2"
+    const technosContainerStyle = "px-8 lg:px-[10%] xl:px-[20%] py-12 flex flex-col xl:flex-col gap-12 justify-between my-20";
+    const technosTitleStyle = "font-heading text-textlight uppercase text-center text-5xl font-black";
+    const technosListsContainerStyle = "grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 justify-center w-full";
+    const technosListContainerStyle = "flex flex-col gap-2 w-full"
     const technosListTitleStyle = "uppercase font-heading font-semibold text-xl text-alternatelight border-b border-alternatelight";
     const technosListStyle = "text-textlight font-default font-light flex flex-col gap-2 text-sm sm:text-lg lg:text-2xl";
-    const technosListItemStyle = "flex flex-row gap-2 items-center hover:bg-dark hover:bg-opacity-40 cursor-default";
+    const technosListItemStyle = "flex flex-row gap-2 items-center hover:bg-dark hover:bg-opacity-40";
     const technosListItemLogoStyle = "text-textlight w-4";
     // const technosListItemLogoStyle = "text-textlight w-4 grayscale brightness-50";
     
@@ -55,9 +55,18 @@ function Technos() {
             listTitle: "3D & CAO",
             technos: [
                 { technoName: "Blender", technoLogo: LogoBlender },
-                { technoName: "Substance Painter", technoLogo: LogoSubstancePainter },
+                { technoName: "Painter", technoLogo: LogoSubstancePainter },
                 { technoName: "Spline", technoLogo: LogoSpline },
                 { technoName: "Solidworks", technoLogo: LogoSolidworks },
+            ]
+        },
+        {
+            listTitle: "????????",
+            technos: [
+                { technoName: "??????", technoLogo: LogoJavascript },
+                { technoName: "??????", technoLogo: LogoJavascript },
+                { technoName: "??????", technoLogo: LogoJavascript },
+                { technoName: "??????", technoLogo: LogoJavascript },
             ]
         },
     ]
@@ -66,7 +75,7 @@ function Technos() {
     JSX
     ////////////////////////////////////////////////// */
     return (
-        <aside id="side" className={technosContainerStyle}>
+        <aside id="technos" className={technosContainerStyle}>
             <h2 className={technosTitleStyle}>Technos</h2>
             <div className={technosListsContainerStyle}>
                 {technosLists.map((list, index) => (

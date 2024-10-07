@@ -27,8 +27,8 @@ export default {
         accent: "#FFF500",
         background: "#e3e3e3",
         alternatelight: "#A0A0A0",
-        alternatemedium: "#3b3b3b",
-        alternatedark: "#282828",
+        alternatemedium: "#4b4b4b",
+        alternatedark: "#2a2a2a",
       },
       backgroundImage: {
         'grainyLight': "url('img/grainybglight.avif')",
@@ -36,7 +36,12 @@ export default {
         'profileCasual': "url('img/profile-casual.jpeg')",
         'plainBrand': "url('img/plainbrand.avif')",
         'background0': "url('img/background.svg')",
-      }
+      },
+      cursor: {
+        'dot': 'url("img/dot-cursor.svg"), default',
+        'triangle': 'url("img/triangle-cursor.svg"), pointer',
+        'slider': 'url("img/slider-cursor.svg"), grab',
+      },
     },
   },
   plugins: [],

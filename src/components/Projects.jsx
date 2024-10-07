@@ -198,7 +198,7 @@ function PrevArrow(props) {
   const { onClick } = props;
   return (
     <button
-      className={"hover:text-accent ease-in-out duration-300 text-textlight absolute top-[50%] left-[-20px] z-0 text-xl font-bold bg-dark rounded-full py-2 px-2"}
+      className={"hover:text-accent ease-in-out duration-300 text-textlight absolute top-[50%] left-[-20px] z-10 text-xl font-bold bg-dark rounded-full py-2 px-2 cursor-triangle"}
       onClick={onClick}
     ><AiFillLeftCircle /></button>
   );
@@ -208,7 +208,7 @@ function NextArrow(props) {
   const { onClick } = props;
   return (
     <button
-      className={"hover:text-accent ease-in-out duration-300 text-textlight absolute top-[50%] right-[-20px] z-0 text-xl font-bold bg-dark rounded-full py-2 px-2"}
+      className={"hover:text-accent ease-in-out duration-300 text-textlight absolute top-[50%] right-[-20px] z-10 text-xl font-bold bg-dark rounded-full py-2 px-2 cursor-triangle"}
       onClick={onClick}
     ><AiFillRightCircle /></button>
   );
@@ -218,14 +218,14 @@ function NextArrow(props) {
 PROJECTS COMPONENT
 ████████████████████████████████████████████████████████████████████████████████████████████████████ */
 function Projects() {
-  const projectsContainerStyle = "mx-4 lg:mx-[10%] xl:mx-[20%] my-8 flex flex-col gap-16 justify-center items-center p-12 bg-light shadow-md border-2 border-dark rounded-md";
+  const projectsContainerStyle = "mx-4 lg:mx-[10%] xl:mx-[20%] my-12 flex flex-col gap-16 justify-center items-center p-12 bg-light shadow-md border border-dark rounded-md";
 
-  const projectsContainerTitleContainerStyle = "gap-2 flex flex-col md:flex-row w-full gap-4 md:gap-12";
+  const projectsContainerTitleContainerStyle = "gap-2 flex flex-col md:flex-row w-full gap-4 md:gap-12 md:items-center";
   const projectsContainerTitleStyle = "text-5xl xl:text-6xl font-black uppercase font-heading text-textdark flex flex-col";
   const projectsContainerTitleSpanStyle = "text-textdark";
-  const projectsContainerPhraseStyle = "text-xl md:text-2xl lg:text-3xl font-default font-normal text-justify";
+  const projectsContainerPhraseStyle = "text-xl md:text-2xl font-default font-normal italic";
 
-  const projectsSliderContainerStyle = "slider-container w-full border-l border-r border-medium";
+  const projectsSliderContainerStyle = "slider-container w-full border-l border-r border-medium cursor-slider";
   const projectsGridContainerStyle = "grid grid-cols-full md:grid-cols-2 xl:grid-cols-3 gap-8";
 
   const personalProjectsSliderSettings = { //https://react-slick.neostack.com/docs/example/
@@ -241,11 +241,11 @@ function Projects() {
 
   return (
       <>
-        <main id="main" className={projectsContainerStyle}>
+        <main id="projects" className={projectsContainerStyle}>
 
           <div className={projectsContainerTitleContainerStyle}>
             <h2 className={projectsContainerTitleStyle}>Personal <span className={projectsContainerTitleSpanStyle}>Projects</span></h2>
-            <p className={projectsContainerPhraseStyle}>A selection of web projects I've developed recently, showcasing various skills and interests</p>
+            <p className={projectsContainerPhraseStyle}>A selection of web projects I've developed recently, showcasing various skills and interests.</p>
           </div>
 
           <div className={projectsSliderContainerStyle}>
@@ -257,10 +257,12 @@ function Projects() {
               }
             </Slider>
           </div>
+          
+          <div className="h-16 w-full"></div>
 
           <div className={projectsContainerTitleContainerStyle}>
-            <h2 className={projectsContainerTitleStyle}>Tutored <span className={projectsContainerTitleSpanStyle}>Projects</span></h2>
-            <p className={projectsContainerPhraseStyle}>Projects made during learning</p>
+            <h2 className={projectsContainerTitleStyle}>Guided <span className={projectsContainerTitleSpanStyle}>Projects</span></h2>
+            <p className={projectsContainerPhraseStyle}>Projects completed as part of an online course, such as those on Udemy.</p>
           </div>
 
           <div className={projectsGridContainerStyle}>

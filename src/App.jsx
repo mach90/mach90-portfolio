@@ -19,12 +19,14 @@ export default function App() {
 
   return (
     <ReactLenis root>
-      <div className='bg-background0 bg-opacity-100 pt-6 bg-contain bg-bottom bg-no-repeat'>
-        <Nav />
-        <Header />
-        <Projects />
-        <Technos />
-        <Footer />
+      <div className='bg-background pt-4 md:pt-6 cursor-dot'>
+        <div className='bg-background0 bg-no-repeat bg-bottom'>
+          <Nav />
+          <Header />
+          <Projects />
+          <Technos />
+          <Footer />
+        </div>
       </div>
     </ReactLenis>
   )
