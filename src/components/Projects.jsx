@@ -218,12 +218,12 @@ function NextArrow(props) {
 PROJECTS COMPONENT
 ████████████████████████████████████████████████████████████████████████████████████████████████████ */
 function Projects() {
-  const projectsContainerStyle = "mx-4 lg:mx-[10%] xl:mx-[20%] my-12 flex flex-col gap-16 justify-center items-center p-12 bg-light shadow-md border border-dark rounded-md";
+  const projectsContainerStyle = "mx-4 lg:mx-[10%] xl:mx-[20%] my-12 flex flex-col gap-16 justify-center items-center p-12 bg-light dark:bg-dark shadow-md border border-dark rounded-md";
 
   const projectsContainerTitleContainerStyle = "gap-2 flex flex-col md:flex-row w-full gap-4 md:gap-12 md:items-center";
-  const projectsContainerTitleStyle = "text-5xl xl:text-6xl font-black uppercase font-heading text-textdark flex flex-col";
-  const projectsContainerTitleSpanStyle = "text-textdark";
-  const projectsContainerPhraseStyle = "text-xl md:text-2xl font-default font-normal italic";
+  const projectsContainerTitleStyle = "text-5xl xl:text-6xl font-black uppercase font-heading text-textdark dark:text-textlight flex flex-col";
+  const projectsContainerTitleSpanStyle = "text-textdark dark:text-textlight";
+  const projectsContainerPhraseStyle = "text-xl md:text-2xl font-default font-normal italic text-textdark dark:text-textmedium";
 
   const projectsSliderContainerStyle = "slider-container w-full border-l border-r border-medium cursor-slider";
   const projectsGridContainerStyle = "grid grid-cols-full md:grid-cols-2 xl:grid-cols-3 gap-8";

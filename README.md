@@ -6,8 +6,8 @@
 
 ## TO DO
 - [ ] Some GSAP animations
-- [ ] Parallax
+- [x] Parallax
 - [ ] A hamburger menu
-- [ ] A dark mode
+- [ ] A dark mode ?
 - [ ] Animated projects when hovered
 - [ ] Protected mail contact

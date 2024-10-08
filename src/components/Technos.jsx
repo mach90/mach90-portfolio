@@ -1,17 +1,17 @@
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 LOGOS IMPORTS
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
-import LogoJavascript from '../img/techlogos_js.png';
-import LogoReact from '../img/techlogos_react.png';
-import LogoWebflow from '../img/techlogos_webflow.png';
-import LogoFigma from '../img/techlogos_figma.png';
-import LogoPhotoshop from '../img/techlogos_ps.png';
-import LogoIllustrator from '../img/techlogos_ai.png';
-import LogoBlender from '../img/techlogos_blender.png';
-import LogoSubstancePainter from '../img/techlogos_pt.png';
-import LogoSpline from '../img/techlogos_spline.png';
-import LogoSolidworks from '../img/techlogos_3ds.png';
-import LogoRive from '../img/techlogos_rive.png';
+import LogoJavascript from '../img/techlogos/techlogos_js.png';
+import LogoReact from '../img/techlogos/techlogos_react.png';
+import LogoWebflow from '../img/techlogos/techlogos_webflow.png';
+import LogoFigma from '../img/techlogos/techlogos_figma.png';
+import LogoPhotoshop from '../img/techlogos/techlogos_ps.png';
+import LogoIllustrator from '../img/techlogos/techlogos_ai.png';
+import LogoBlender from '../img/techlogos/techlogos_blender.png';
+import LogoSubstancePainter from '../img/techlogos/techlogos_pt.png';
+import LogoSpline from '../img/techlogos/techlogos_spline.png';
+import LogoSolidworks from '../img/techlogos/techlogos_3ds.png';
+import LogoRive from '../img/techlogos/techlogos_rive.png';
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 TECHNOS COMPONENT
@@ -21,14 +21,13 @@ function Technos() {
     STYLES
     ////////////////////////////////////////////////// */
     const technosContainerStyle = "px-8 lg:px-[10%] xl:px-[20%] py-12 flex flex-col xl:flex-col gap-12 justify-between my-20";
-    const technosTitleStyle = "font-heading text-textlight uppercase text-center text-5xl font-black";
-    const technosListsContainerStyle = "grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 justify-center w-full";
-    const technosListContainerStyle = "flex flex-col gap-2 w-full"
-    const technosListTitleStyle = "uppercase font-heading font-semibold text-xl text-alternatelight border-b border-alternatelight";
-    const technosListStyle = "text-textlight font-default font-light flex flex-col gap-2 text-sm sm:text-lg lg:text-2xl";
-    const technosListItemStyle = "flex flex-row gap-2 items-center hover:bg-dark hover:bg-opacity-40";
-    const technosListItemLogoStyle = "text-textlight w-4";
-    // const technosListItemLogoStyle = "text-textlight w-4 grayscale brightness-50";
+    const technosTitleStyle = "font-heading text-textlight bg-dark rounded-md p-2 uppercase text-center text-5xl font-black shadow-md";
+    const technosListsContainerStyle = "grid grid-cols-2 md:grid-cols-4 xl:grid-cols-4 gap-8 justify-center w-full";
+    const technosListContainerStyle = "flex flex-col gap-2 w-full p-4 bg-light border border-dark rounded-md shadow-md"
+    const technosListTitleStyle = "uppercase font-heading font-black text-xl text-textme border-b border-alternatelight px-2";
+    const technosListStyle = "text-text font-normal font-light flex flex-col gap-2 text-sm sm:text-lg lg:text-2xl";
+    const technosListItemStyle = "flex flex-row gap-2 items-center px-2 hover:bg-medium hover:bg-opacity-50";
+    const technosListItemLogoStyle = "text-textlight w-4 grayscale brightness-0";
     
     /* //////////////////////////////////////////////////
     TECHNOS LIST
