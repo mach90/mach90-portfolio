@@ -7,12 +7,9 @@ import ProjectGrid from './ProjectGrid';
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 IMPORTS FOR PROJECTS IMAGES
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
-import TravelFormGeneratorImg1 from "../img/projects/perso/P0316-travel-plan-form.avif";
-import TravelFormGeneratorImg2 from "../img/projects/perso/P0316-travel-plan-form-mobile.avif";
-import BentoEnviroImg1 from "../img/projects/perso/P0330-bento-enviro.avif";
-import BentoEnviroImg2 from "../img/projects/perso/P0330-bento-enviro-mobile.avif";
-import PrimusImg1 from "../img/projects/perso/prime-lite-plus.webflow.io.avif";
-import PrimusImg2 from "../img/projects/perso/prime-lite-plus.webflow.io-mobile.avif";
+import TravelFormGeneratorImg from "../img/projects/perso/P0316-travel-plan-form.avifs";
+import BentoEnviroImg from "../img/projects/perso/P0330-bento-enviro.avifs";
+import PrimusImg from "../img/projects/perso/prime-lite-plus.webflow.io.avifs";
 import PigGame from "../img/projects/formation/P0202-pig-game.avif";
 import UnderscoreToCamel from "../img/projects/formation/P0203-underscore2camel.avif";
 import GuessMyNumber from "../img/projects/formation/P0208-guess-my-number.avif" 
@@ -38,8 +35,7 @@ const personalProjectsList = [
     version: "0.1.0",
     description: "A web form that converts user input into a formatted and printable Travel Form (.pdf) using React-pdf library.",
     techs: ["React", "Tailwind", "React-pdf", "Spline", "Blender"],
-    src1: TravelFormGeneratorImg1,
-    src2: TravelFormGeneratorImg2,
+    src1: TravelFormGeneratorImg,
     link: "https://travelformgenerator.netlify.app/",
     github: "https://github.com/mach90/TFgen",
   },
@@ -49,8 +45,7 @@ const personalProjectsList = [
     version: "0.1.0",
     description: "Aggregating diverse weather and environmental data from multiple APIs and presenting it through a concise Bento-style UI.",
     techs: ["React", "Tailwind"],
-    src1: BentoEnviroImg1,
-    src2: BentoEnviroImg2,
+    src1: BentoEnviroImg,
     link: "https://bento-enviro.netlify.app/",
     github: "https://github.com/mach90/bento-enviro",
 
@@ -61,8 +56,7 @@ const personalProjectsList = [
     version: "0.1.0",
     description: "Transformed a Primus stove e-commerce product page into a product showcase on Webflow, preserving the brand's visual identity while enhancing the presentation.",
     techs: ["Figma", "Webflow", "Spline", "Blender"],
-    src1: PrimusImg1,
-    src2: PrimusImg2,
+    src1: PrimusImg,
     link: "https://prime-lite-plus.webflow.io/",
     github: "",
   },

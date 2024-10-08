@@ -28,7 +28,7 @@ const projectScreenshotBigContainerStyle = "col-span-4 md:col-span-3 lg:col-span
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 PROJECT COMPONENT
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
-export default function Project({title, description, status, version, techs, src1, src2, link, github}) {
+export default function Project({title, description, status, version, techs, src1, link, github}) {
     /* //////////////////////////////////////////////////
     JSX
     ////////////////////////////////////////////////// */
@@ -58,10 +58,6 @@ export default function Project({title, description, status, version, techs, src
                 {link && <a className={projectInfosLinksStyle} href={link} target="_blank"><HiExternalLink /> See live version</a>}
                 {github && <a className={projectInfosLinksStyle} href={github} target="_blank"><LuCode2 /> See source code</a>}
             </div>
-
-            {/* {src2 && <div className={projectScreenshotSmallContainerStyle}>
-                <img src={src2} alt={title} />
-            </div>} */}
 
         </div>
     );
