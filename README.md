@@ -1,15 +1,14 @@
 # mach90 Portfolio
 
 ## TO FIX
-- [x] AVIF
-- [x] Fix caroussel responsiveness and global responsiveness
-- [ ] Performance issue (parallax ?)
-- [ ] Nav menu transition (smooth)
+- [ ] Performance issue (investigating)
 
 ## TO DO
-- [ ] Some GSAP animations
-- [x] Parallax
-- [ ] Hhamburger menu
-- [ ] Dark mode ?
-- [ ] Projects images lightbox
-- [ ] Protected mail contact
+- [ ] Projects infinite scroll (30% done)
+    - [ ] Code (30% done)
+    - [ ] Lightbox (0% done)
+- [ ] Parallax (90% done)
+    - [x] Art (100% done)
+    - [x] Code (100% done)
+- [ ] Proper contact section (0% done)
+- [ ] GSAP animations (0% done)

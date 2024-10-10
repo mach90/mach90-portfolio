@@ -192,7 +192,7 @@ function PrevArrow(props) {
   const { onClick } = props;
   return (
     <button
-      className={"hover:text-accent ease-in-out duration-300 text-textlight absolute top-[50%] left-[-20px] z-10 text-xl font-bold bg-dark rounded-full py-2 px-2 cursor-triangle"}
+      className={"ease-in-out duration-300 absolute top-[50%] left-[-30px] z-10 text-xl font-bold bg-[#cecece] hover:bg-[#b4b4b4] dark:bg-[#494949] dark:hover:bg-[#6c6c6c] text-[#6a6a6a] hover:text-[#4f4f4f] dark:text-[#828282] dark:hover:text-[#a0a0a0] rounded-full p-1"}
       onClick={onClick}
     ><AiFillLeftCircle /></button>
   );
@@ -202,7 +202,7 @@ function NextArrow(props) {
   const { onClick } = props;
   return (
     <button
-      className={"hover:text-accent ease-in-out duration-300 text-textlight absolute top-[50%] right-[-20px] z-10 text-xl font-bold bg-dark rounded-full py-2 px-2 cursor-triangle"}
+      className={"ease-in-out duration-300 absolute top-[50%] right-[-30px] z-10 text-xl font-bold bg-[#cecece] hover:bg-[#b4b4b4] dark:bg-[#494949] dark:hover:bg-[#6c6c6c] text-[#6a6a6a] hover:text-[#4f4f4f] dark:text-[#828282] dark:hover:text-[#a0a0a0] rounded-full p-1"}
       onClick={onClick}
     ><AiFillRightCircle /></button>
   );
@@ -212,18 +212,20 @@ function NextArrow(props) {
 PROJECTS COMPONENT
 ████████████████████████████████████████████████████████████████████████████████████████████████████ */
 function Projects() {
-  const projectsContainerStyle = "mx-4 lg:mx-[10%] xl:mx-[20%] my-12 flex flex-col gap-16 justify-center items-center p-12 bg-light dark:bg-dark shadow-md border border-dark rounded-md";
+  const projectsContainerStyle = "px-[10%] xl:px-[20%] py-12 flex flex-col gap-16 justify-center items-center bg-lightSecondary dark:bg-darkSecondary border-y border-lightSecondaryBorder dark:border-darkSecondaryBorder overflow-x-hidden";
 
   const projectsContainerTitleContainerStyle = "gap-2 flex flex-col md:flex-row w-full gap-4 md:gap-12 md:items-center";
-  const projectsContainerTitleStyle = "text-5xl xl:text-6xl font-black uppercase font-heading text-textdark dark:text-textlight flex flex-col";
-  const projectsContainerTitleSpanStyle = "text-textdark dark:text-textlight";
-  const projectsContainerPhraseStyle = "text-xl md:text-2xl font-default font-normal italic text-textdark dark:text-textmedium";
+  const projectsContainerTitleStyle = "text-5xl xl:text-6xl font-black uppercase font-heading text-lightText dark:text-darkText flex flex-col";
+  const projectsContainerTitleSpanStyle = "text-lightHeading dark:text-darkHeading";
+  const projectsContainerPhraseStyle = "text-xl md:text-2xl font-default font-normal italic text-lightText dark:text-darkText";
 
-  const projectsSliderContainerStyle = "slider-container w-full border-l border-r border-medium cursor-slider";
-  const projectsGridContainerStyle = "grid grid-cols-full md:grid-cols-2 xl:grid-cols-3 gap-8";
+  const projectsSliderContainerStyle = "slider-container w-full cursor-grab shadow-lg";
+  const projectsGridContainerStyle = "flex flex-row w-max gap-8";
+
+  const projectsSpacerStyle = "h-4 w-full border-b border-lightSecondaryBorder dark:border-darkSecondaryBorder";
 
   const personalProjectsSliderSettings = { //https://react-slick.neostack.com/docs/example/
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     lazyLoad: true,
@@ -239,7 +241,7 @@ function Projects() {
 
           <div className={projectsContainerTitleContainerStyle}>
             <h2 className={projectsContainerTitleStyle}>Personal <span className={projectsContainerTitleSpanStyle}>Projects</span></h2>
-            <p className={projectsContainerPhraseStyle}>A selection of web projects I've developed recently, showcasing various skills and interests.</p>
+            <p className={projectsContainerPhraseStyle}>A selection of web projects I've developed recently on my own, each one created to test my abilities and showcase my skills and personal interests.</p>
           </div>
 
           <div className={projectsSliderContainerStyle}>
@@ -252,19 +254,19 @@ function Projects() {
             </Slider>
           </div>
           
-          <div className="h-16 w-full"></div>
+          <div className={projectsSpacerStyle}></div>
 
           <div className={projectsContainerTitleContainerStyle}>
             <h2 className={projectsContainerTitleStyle}>Guided <span className={projectsContainerTitleSpanStyle}>Projects</span></h2>
-            <p className={projectsContainerPhraseStyle}>Projects completed as part of an online course, such as those on Udemy.</p>
+            <p className={projectsContainerPhraseStyle}>A few guided projects from online courses by some of the best-rated instructors. Each project was essential in helping me learn and apply key concepts.</p>
           </div>
 
           <div className={projectsGridContainerStyle}>
-              {
-                tutoredProjectsList.map((proj, index) => {
-                  return <ProjectGrid key={index} {...proj} />
-                })
-              }
+                {
+                  tutoredProjectsList.map((proj, index) => {
+                    return <ProjectGrid key={index} {...proj} />
+                  })
+                }
           </div>
 
         </main>

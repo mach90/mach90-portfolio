@@ -1,10 +1,10 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-import ParallaxClouds from "../img/parallax-clouds.avif";
-import ParallaxPeaks from "../img/parallax-peaks.avif";
-import ParallaxHills from "../img/parallax-hills.avif";
-import ParallaxTrees from "../img/parallax-trees.avif";
+import ParallaxClouds from "../img/parallax/parallax-clouds.avif";
+import ParallaxPeaks from "../img/parallax/parallax-peaks.avif";
+import ParallaxHills from "../img/parallax/parallax-hills.avif";
+import ParallaxTrees from "../img/parallax/parallax-trees.avif";
 
 function MultiLayerParallax() {
     const ref = useRef(null);
@@ -13,12 +13,12 @@ function MultiLayerParallax() {
         offset: ["start start", "end start"], //[starts when "element top intersects viewport top", ends when "element bottom intersects viewport top"]
     });
     const cloudsY = useTransform(scrollYProgress, [0, 1], ["0%", "-10%"]); //start at X% and ends at X% of the ref element height
-    const peaksY = useTransform(scrollYProgress, [0, 1], ["60%", "20%"]);
+    const peaksY = useTransform(scrollYProgress, [0, 1], ["50%", "10%"]);
     const hillsY = useTransform(scrollYProgress, [0, 1], ["130%", "30%"]);
     const treesY = useTransform(scrollYProgress, [0, 1], ["180%", "40%"]);
 
     return (
-        <div ref={ref} className="fixed w-full h-full overflow-hidden z-[-100] bg-backgroundDark">
+        <div ref={ref} className="fixed w-full h-[3000%] sm:h-[2000%] md:h-[300%] xl:h-[100%] overflow-hidden z-[-100]">
 
             <motion.img 
                 id="parallax-clouds" 
