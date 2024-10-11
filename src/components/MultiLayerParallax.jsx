@@ -3,8 +3,8 @@ import { useRef } from "react";
 
 import ParallaxClouds from "../img/parallax/parallax-clouds.avif";
 import ParallaxPeaks from "../img/parallax/parallax-peaks.avif";
-import ParallaxHills from "../img/parallax/parallax-hills.avif";
-import ParallaxTrees from "../img/parallax/parallax-trees.avif";
+// import ParallaxHills from "../img/parallax/parallax-hills.svg";
+// import ParallaxTrees from "../img/parallax/parallax-trees.svg";
 
 function MultiLayerParallax() {
     const ref = useRef(null);
@@ -14,17 +14,17 @@ function MultiLayerParallax() {
     });
     const cloudsY = useTransform(scrollYProgress, [0, 1], ["0%", "-10%"]); //start at X% and ends at X% of the ref element height
     const peaksY = useTransform(scrollYProgress, [0, 1], ["50%", "10%"]);
-    const hillsY = useTransform(scrollYProgress, [0, 1], ["130%", "30%"]);
-    const treesY = useTransform(scrollYProgress, [0, 1], ["180%", "40%"]);
+    // const hillsY = useTransform(scrollYProgress, [0, 1], ["130%", "30%"]);
+    // const treesY = useTransform(scrollYProgress, [0, 1], ["180%", "40%"]);
 
     return (
-        <div ref={ref} className="fixed w-full h-[3000%] sm:h-[2000%] md:h-[300%] xl:h-[100%] overflow-hidden z-[-100]">
+        <div ref={ref} className="fixed w-full h-full overflow-hidden z-[-100]">
 
             <motion.img 
                 id="parallax-clouds" 
                 src={ParallaxClouds} 
                 alt="Parallax Clouds" 
-                className="absolute inset-0 z-[-90] bg-cover bg-top bg-no-repeat" 
+                className="absolute inset-0 z-[-90] bg-cover bg-top bg-no-repeat w-full" 
                 style={{
                     y: cloudsY,
                 }}
@@ -34,31 +34,31 @@ function MultiLayerParallax() {
                 id="parallax-peaks" 
                 src={ParallaxPeaks} 
                 alt="Parallax Peaks" 
-                className="absolute inset-0 z-[-80] bg-cover bg-top bg-no-repeat" 
+                className="absolute inset-0 z-[-80] bg-cover bg-top bg-no-repeat w-full" 
                 style={{
                     y: peaksY,
                 }}
             />
 
-            <motion.img 
+            {/* <motion.img 
                 id="parallax-hills" 
                 src={ParallaxHills} 
                 alt="Parallax Hills" 
-                className="absolute inset-0 z-[-70] bg-cover bg-top bg-no-repeat" 
+                className="absolute inset-0 z-[-70] bg-cover bg-top bg-no-repeat w-full" 
                 style={{
                     y: hillsY,
                 }}
-            />
+            /> */}
 
-            <motion.img 
+            {/* <motion.img 
                 id="parallax-trees" 
                 src={ParallaxTrees} 
                 alt="Parallax Trees" 
-                className="absolute inset-0 z-[-60] bg-cover bg-top bg-no-repeat" 
+                className="absolute inset-0 z-[-60] bg-cover bg-top bg-no-repeat w-full" 
                 style={{
                     y: treesY,
                 }}
-            />
+            /> */}
 
         </div>
     );

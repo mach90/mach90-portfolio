@@ -9,7 +9,7 @@ import Projects from './components/Projects';
 import Stacks from './components/Stacks';
 import Footer from './components/Footer';
 import Nav from './components/Nav';
-// import MultiLayerParallax from './components/MultiLayerParallax';
+import MultiLayerParallax from './components/MultiLayerParallax';
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 APP COMPONENT
@@ -29,7 +29,7 @@ export default function App() {
   return (
     <ReactLenis root>
       <div className={theme === "dark" ? "dark" : ""}>
-          {/* <MultiLayerParallax /> */}
+          <MultiLayerParallax />
           <Nav handleTheme={handleTheme} theme={theme} />
           <Header />
           <Projects />

@@ -10,18 +10,18 @@ IMPORTS FOR PROJECTS IMAGES
 import TravelFormGeneratorImg from "../img/projects/perso/P0316-travel-plan-form.avifs";
 import BentoEnviroImg from "../img/projects/perso/P0330-bento-enviro.avifs";
 import PrimusImg from "../img/projects/perso/prime-lite-plus.webflow.io.avifs";
-import PigGame from "../img/projects/formation/P0202-pig-game.avif";
-import UnderscoreToCamel from "../img/projects/formation/P0203-underscore2camel.avif";
-import GuessMyNumber from "../img/projects/formation/P0208-guess-my-number.avif" 
-import Bankist from "../img/projects/formation/P0210-bankist.avif" 
-import PizzaMenu from "../img/projects/formation/P0301-pizza-menu.avif" 
-import TravelList from "../img/projects/formation/P0305-travel-list.avif" 
-import TipCalculator from "../img/projects/formation/P0308-tip-calculator.avif" 
-import EatNSplit from "../img/projects/formation/P0309-eat-n-split.avif" 
-import UsePopcorn from "../img/projects/formation/P0310-usepopcorn.avif" 
-import ReactQuiz from "../img/projects/formation/P0317-react-quiz.avif" 
-import Worldwise from "../img/projects/formation/P0319-worldwise.avif" 
-import FastReactPizza from "../img/projects/formation/P0323-fast-react-pizza.avif" 
+import PigGame from "../img/projects/formation/P0202-pig-game-thumbnail.avif";
+import UnderscoreToCamel from "../img/projects/formation/P0203-underscore2camel-thumbnail.avif";
+import GuessMyNumber from "../img/projects/formation/P0208-guess-my-number-thumbnail.avif" 
+import Bankist from "../img/projects/formation/P0210-bankist-thumbnail.avif" 
+import PizzaMenu from "../img/projects/formation/P0301-pizza-menu-thumbnail.avif" 
+import TravelList from "../img/projects/formation/P0305-travel-list-thumbnail.avif" 
+import TipCalculator from "../img/projects/formation/P0308-tip-calculator-thumbnail.avif" 
+import EatNSplit from "../img/projects/formation/P0309-eat-n-split-thumbnail.avif" 
+import UsePopcorn from "../img/projects/formation/P0310-usepopcorn-thumbnail.avif" 
+import ReactQuiz from "../img/projects/formation/P0317-react-quiz-thumbnail.avif" 
+import Worldwise from "../img/projects/formation/P0319-worldwise-thumbnail.avif" 
+import FastReactPizza from "../img/projects/formation/P0323-fast-react-pizza-thumbnail.avif" 
 
 import { AiFillLeftCircle, AiFillRightCircle } from "react-icons/ai";
 
@@ -212,9 +212,9 @@ function NextArrow(props) {
 PROJECTS COMPONENT
 ████████████████████████████████████████████████████████████████████████████████████████████████████ */
 function Projects() {
-  const projectsContainerStyle = "px-[10%] xl:px-[20%] py-12 flex flex-col gap-16 justify-center items-center bg-lightSecondary dark:bg-darkSecondary border-y border-lightSecondaryBorder dark:border-darkSecondaryBorder overflow-x-hidden";
+  const projectsContainerStyle = "px-[10%] xl:px-[20%] py-40 flex flex-col gap-24 justify-center items-center bg-lightSecondary dark:bg-darkSecondary border-y border-lightSecondaryBorder dark:border-darkSecondaryBorder overflow-x-hidden";
 
-  const projectsContainerTitleContainerStyle = "gap-2 flex flex-col md:flex-row w-full gap-4 md:gap-12 md:items-center";
+  const projectsContainerTitleContainerStyle = "gap-2 flex flex-col md:flex-row w-full gap-4 md:gap-12 md:items-start";
   const projectsContainerTitleStyle = "text-5xl xl:text-6xl font-black uppercase font-heading text-lightText dark:text-darkText flex flex-col";
   const projectsContainerTitleSpanStyle = "text-lightHeading dark:text-darkHeading";
   const projectsContainerPhraseStyle = "text-xl md:text-2xl font-default font-normal italic text-lightText dark:text-darkText";
@@ -222,13 +222,13 @@ function Projects() {
   const projectsSliderContainerStyle = "slider-container w-full cursor-grab shadow-lg";
   const projectsGridContainerStyle = "flex flex-row w-max gap-8";
 
-  const projectsSpacerStyle = "h-4 w-full border-b border-lightSecondaryBorder dark:border-darkSecondaryBorder";
+  const projectsSpacerStyle = "h-0 w-full border-b border-lightSecondaryBorder dark:border-darkSecondaryBorder";
 
   const personalProjectsSliderSettings = { //https://react-slick.neostack.com/docs/example/
     dots: false,
     infinite: true,
     speed: 500,
-    lazyLoad: true,
+    lazyLoad: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,

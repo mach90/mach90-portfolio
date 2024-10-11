@@ -11,7 +11,7 @@ function Header() {
     /* //////////////////////////////////////////////////
     STYLES
     ////////////////////////////////////////////////// */
-    const headerContainerStyle = "px-4 pt-28 pb-16 lg:px-[10%] xl:px-[20%] flex flex-col gap-16 justify-center items-center bg-lightPrimary dark:bg-darkPrimary bg-opacity-100 dark:bg-opacity-100";
+    const headerContainerStyle = "px-4 pt-40 pb-24 lg:px-[10%] xl:px-[20%] flex flex-col gap-24 justify-center items-center bg-lightPrimary dark:bg-darkPrimary bg-opacity-0 dark:bg-opacity-[93%]";
 
     const headerPortfolio = "w-full animate-fade-in";
 

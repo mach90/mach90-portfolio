@@ -41,7 +41,7 @@ export default {
         darkSecondaryBorder: "#252629",
         lightHeading: "#333333",
         lightSubheading: "#7f7f7f",
-        lightText: "#c8c7c8",
+        lightText: "#abaaab",
         darkHeading: "#ffffff",
         darkSubheading: "#8a8a8c",
         darkText: "#7f7f7f",
@@ -51,8 +51,8 @@ export default {
         darkSecondaryAccent: "#d1e0f0",
       },
       backgroundImage: {
-        'lightProfileCasual': "url('img/profile-casual.avif')",
-        'darkProfileCasual': "url('img/profile-casual.jpeg')",
+        'lightProfileCasual': "url('img/profile-casual-light.jpeg')",
+        'darkProfileCasual': "url('img/profile-casual-dark.jpeg')",
       },
       cursor: {
         'dot': 'url("img/cursors/dot-cursor.svg"), default',

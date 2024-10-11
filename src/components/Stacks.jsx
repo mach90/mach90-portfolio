@@ -22,13 +22,13 @@ function Stacks() {
     /* //////////////////////////////////////////////////
     STYLES
     ////////////////////////////////////////////////// */
-    const stacksContainerStyle = "px-[10%] xl:px-[20%] py-12 flex flex-col xl:flex-col gap-12 justify-center items-center bg-lightSecondary dark:bg-darkSecondary";
+    const stacksContainerStyle = "px-[10%] xl:px-[20%] py-40 flex flex-col xl:flex-col gap-24 justify-center items-center bg-lightSecondary dark:bg-darkSecondary";
     const stacksTitleStyle = "font-heading px-6 py-2 rounded-full border-4 border-lightSecondaryBorder dark:border-darkSecondaryBorder uppercase text-center text-5xl font-black text-lightSubheading dark:text-darkSubheading w-max";
-    const stacksListsContainerStyle = "grid grid-cols-2 md:grid-cols-4 xl:grid-cols-4 gap-8 justify-center w-full";
-    const stacksListContainerStyle = "flex flex-col gap-2 w-full p-4 bg-lightPrimary dark:bg-darkPrimary shadow-sm border-0 border-lightSecondaryBorder dark:border-darkSecondaryBorder rounded-lg"
-    const stacksListTitleStyle = "text-lightHeading dark:text-darkSubheading uppercase font-heading font-black text-xl border-b border-lightSecondaryBorder dark:border-darkSecondaryBorder px-2 pb-2 text-center";
-    const stacksListStyle = "text-lightText dark:text-darkText font-default font-medium flex flex-col gap-2 text-sm sm:text-lg lg:text-xl";
-    const stacksListItemStyle = "flex flex-row gap-2 items-center px-2 hover:text-lightSubheading dark:hover:text-darkSubheading";
+    const stacksListsContainerStyle = "grid grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-8 justify-center w-full";
+    const stacksListContainerStyle = "flex flex-col gap-2 w-full p-4 bg-lightPrimary dark:bg-darkPrimary shadow-sm border-0 border-lightSecondaryBorder dark:border-darkSecondaryBorder rounded-lg hover:scale-105 duration-300"
+    const stacksListTitleStyle = "text-lightSubheading dark:text-darkSubheading uppercase font-heading font-black text-xl border-b border-lightSecondaryBorder dark:border-darkSecondaryBorder px-2 pb-2 text-center";
+    const stacksListStyle = "text-lightSubheading dark:text-darkSubheading font-default font-medium flex flex-col gap-2 text-sm sm:text-lg lg:text-xl";
+    const stacksListItemStyle = "flex flex-row gap-2 items-center px-2";
     const stacksListItemLogoStyle = "text-textlight w-4";
     
     /* //////////////////////////////////////////////////
@@ -67,24 +67,6 @@ function Stacks() {
                 { techName: "Painter", techLogo: LogoSubstancePainter },
                 { techName: "Spline", techLogo: LogoSpline },
                 { techName: "Solidworks", techLogo: LogoSolidworks },
-            ]
-        },
-        {
-            listTitle: "????????",
-            stacks: [
-                { techName: "??????", techLogo: LogoJavascript },
-                { techName: "??????", techLogo: LogoJavascript },
-                { techName: "??????", techLogo: LogoJavascript },
-                { techName: "??????", techLogo: LogoJavascript },
-            ]
-        },
-        {
-            listTitle: "????????",
-            stacks: [
-                { techName: "??????", techLogo: LogoJavascript },
-                { techName: "??????", techLogo: LogoJavascript },
-                { techName: "??????", techLogo: LogoJavascript },
-                { techName: "??????", techLogo: LogoJavascript },
             ]
         },
         {
