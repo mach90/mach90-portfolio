@@ -19,7 +19,7 @@ function Nav({handleTheme, theme}) {
     const headerHamburgerMenuStyle = "text-2xl";
     const headerNavStyle = "hidden md:flex flex-row gap-4 md:gap-8 lg:gap-12 font-bold font-standard text-sm md:text-lg  items-center";
     const headerNavHamburgerStyle = "h-screen flex flex-col gap-12 font-bold font-standard text-4xl items-center pt-20";
-    const headerNavItemStyle = "text-lightSubheading dark:text-darkSubheading hover:text-lightHeading dark:hover:text-darkHeading";
+    const headerNavItemStyle = "text-lightSubheading dark:text-darkSubheading hover:text-lightHeading dark:hover:text-darkHeading duration-300";
     const headerDarkmodeMenuLightStyle = "text-lightSubheading hover:text-lightHeading text-2xl bg-lightSecondary rounded-full p-1";
     const headerDarkmodeMenuDarkStyle = "text-darkSubheading hover:text-darkHeading  text-2xl bg-darkSecondary rounded-full p-1";
     

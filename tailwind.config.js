@@ -17,15 +17,6 @@ export default {
         default: "'Poppins', sans-serif", //100-900
       },
       colors: {
-        textlight: "#FFFFFF",
-        textmedium: "#595959",
-        textdark: "#000000",
-        textdisplay: "#000000",
-        light: "#f4f4f4",
-        borderlight: "#e6e6e6",
-        medium: "#B1B1B1",
-        dark: "#000000",
-        accent: "#FFF500",
         backgroundLight: "#e3e3e3",
         backgroundDark: "#1b1b1b",
         alternatelight: "#A0A0A0",
@@ -49,6 +40,8 @@ export default {
         lightSecondaryAccent: "#e54324",
         darkPrimaryAccent: "#4785c2",
         darkSecondaryAccent: "#d1e0f0",
+        lightValidation: "#3fa153",
+        darkValidation: "#67b342",
       },
       backgroundImage: {
         'lightProfileCasual': "url('img/profile-casual-light.jpeg')",
