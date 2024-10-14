@@ -1,19 +1,31 @@
-/* ////////////////////////////////////////////////////////////////////////////////////////////////////
+/* ████████████████████████████████████████████████████████████████████████████████████████████████████
 IMPORTS
-//////////////////////////////////////////////////////////////////////////////////////////////////// */
+████████████████████████████████████████████████████████████████████████████████████████████████████ */
+/* //////////////////////////////////////////////////
+DEPENDENCIES
+////////////////////////////////////////////////// */
 import { useLocalStorageState } from './hooks/useLocalStorageState';
 import { ReactLenis, useLenis } from 'lenis/react'
+
+/* //////////////////////////////////////////////////
+STYLES
+////////////////////////////////////////////////// */
 import './index.css'
+
+/* //////////////////////////////////////////////////
+COMPONENTS
+////////////////////////////////////////////////// */
+import MultiLayerParallax from './components/MultiLayerParallax';
+import Nav from './components/Nav';
 import Header from './components/Header';
-import Projects from './components/Projects';
+import ProjectsShowcase from './components/ProjectsShowcase';
+import ProjectsAll from './components/ProjectsAll';
 import Stacks from './components/Stacks';
 import Footer from './components/Footer';
-import Nav from './components/Nav';
-import MultiLayerParallax from './components/MultiLayerParallax';
 
-/* ////////////////////////////////////////////////////////////////////////////////////////////////////
+/* ████████████████████████████████████████████████████████████████████████████████████████████████████
 APP COMPONENT
-//////////////////////////////////////////////////////////////////////////////////////////////////// */
+████████████████████████████████████████████████████████████████████████████████████████████████████ */
 export default function App() {
   const [theme, setTheme] = useLocalStorageState([], "theme");
 
@@ -32,7 +44,8 @@ export default function App() {
           <MultiLayerParallax />
           <Nav handleTheme={handleTheme} theme={theme} />
           <Header />
-          <Projects />
+          <ProjectsShowcase />
+          <ProjectsAll />
           <Stacks />
           <Footer />
       </div>

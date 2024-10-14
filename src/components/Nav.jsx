@@ -9,11 +9,11 @@ function Nav({handleTheme, theme}) {
     /* //////////////////////////////////////////////////
     STYLES
     ////////////////////////////////////////////////// */
-    const navContainerStyle = "fixed w-screen z-50";
+    const navContainerStyle = "fixed w-screen z-10";
     const headerCoordsContainerStyle = "flex flex-row justify-between items-center py-2 px-4 lg:px-[10%] xl:px-[20%] bg-lightPrimary dark:bg-darkPrimary text-lightSubheading dark:text-darkSubheading border-b border-lightPrimaryBorder dark:border-darkPrimaryBorder";
     // const headerCoordsStickyContainerStyle = "flex flex-row justify-between items-center border-b border-dark py-2 border-b border-black px-4 bg-light dark:bg-dark w-full fixed top-0 z-20";
     const headerCoordsLogoContainerStyle = "flex flex-row gap-4 items-center"
-    const headerCoordsLogoStyle = "h-12 ";
+    const headerCoordsLogoStyle = "h-12 mix-blend-difference";
     const headerCoordsNameStyle = "flex flex-col uppercase font-heading font-black text-xl leading-none text-lightHeading dark:text-darkHeading";
     const headerCoordsJobStyle = "text-lightSubheading dark:text-darkSubheading text-sm";
     const headerHamburgerMenuStyle = "text-2xl";
@@ -75,7 +75,7 @@ function Nav({handleTheme, theme}) {
                 </div>
                 <div className={headerNavStyle}>
                     <button onClick={(e) => handleScrollTo(e, 'top', 'smooth', 'start')} id="top-btn" className={headerNavItemStyle}><RiHome2Line /></button>
-                    <button onClick={(e) => handleScrollTo(e, 'projects', 'smooth', 'start')} id="projects-btn" className={headerNavItemStyle}>Projects</button>
+                    <button onClick={(e) => handleScrollTo(e, 'projects-showcase', 'smooth', 'start')} id="projects-btn" className={headerNavItemStyle}>Projects</button>
                     <button onClick={(e) => handleScrollTo(e, 'stacks', 'smooth', 'start')} id="stacks-btn" className={headerNavItemStyle}>Stacks</button>
                     <button onClick={(e) => handleScrollTo(e, 'contact', 'smooth')} id="contact-btn" className={headerNavItemStyle}>Contact</button>
 

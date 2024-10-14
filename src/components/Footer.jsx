@@ -17,11 +17,11 @@ export default function Footer() {
     
     const footerContainerUpperStyle = "flex flex-col gap-2 justify-center items-center h-full w-full font-black";
     const footerEnveloppe = "w-full h-full hover:scale-105 duration-200";
-    const footerContactContainerStyle = "grid grid-rows-2 justify-center items-center bg-lightSecondary dark:bg-darkSecondary p-4 rounded-lg";
+    const footerContactContainerStyle = "grid grid-rows-2 justify-center items-center bg-lightSecondary dark:bg-darkSecondary p-4 rounded-lg border-b-8 border-lightValidation dark:border-darkValidation";
     const footerContactIconStyle = "text-5xl pb-3 w-full";
     const footerContactIconAnimateStyle = "hover:scale-110 duration-200";
-    const footerContactTitleStyle = "text-md pt-2 border-t border-lightSecondaryBorder dark:border-darkSecondaryBorder text-lightValidation dark:text-darkValidation";
-    const footerContactSubtitleStyle = "text-sm font-normal";
+    const footerContactTitleStyle = "text-xs sm:text-md pt-2 border-t border-lightSecondaryBorder dark:border-darkSecondaryBorder text-lightValidation dark:text-darkValidation";
+    const footerContactSubtitleStyle = "text-xs sm:text-sm font-normal";
 
     const footerContainerLowerStyle = "flex flex-row gap-4 w-full justify-between border-t border-lightPrimaryBorder dark:border-darkPrimaryBorder pt-4";
     const footerCopyrightStyle = "text-sm font-bold"
