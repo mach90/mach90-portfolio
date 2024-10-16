@@ -7,7 +7,7 @@ import Carousel from "./Carousel";
 PROJECTS COMPONENT
 ████████████████████████████████████████████████████████████████████████████████████████████████████ */
 function ProjectsShowcase() {
-  const projectsContainerStyle = "px-[10%] xl:px-[20%] py-40 flex flex-col gap-24 justify-center items-center bg-lightSecondary dark:bg-darkSecondary border-y border-lightSecondaryBorder dark:border-darkSecondaryBorder overflow-x-hidden";
+  const projectsContainerStyle = "px-[10%] xl:px-[20%] py-40 flex flex-col gap-40 justify-center items-center bg-lightSecondary dark:bg-darkSecondary border-y border-lightSecondaryBorder dark:border-darkSecondaryBorder overflow-x-hidden";
 
   const projectsContainerTitleContainerStyle = "gap-2 flex flex-col md:flex-row w-full gap-4 md:gap-12 md:items-start";
   const projectsContainerTitleStyle = "text-5xl xl:text-6xl font-black uppercase font-heading text-lightText dark:text-darkText flex flex-col";
@@ -16,7 +16,7 @@ function ProjectsShowcase() {
 
   return (
       <>
-        <main id="projects-showcase" className={projectsContainerStyle}>
+        <div id="projects-showcase" className={projectsContainerStyle}>
 
           <div className={projectsContainerTitleContainerStyle}>
             <h2 className={projectsContainerTitleStyle}>Showcased <span className={projectsContainerTitleSpanStyle}>Projects</span></h2>
@@ -25,7 +25,7 @@ function ProjectsShowcase() {
 
           <Carousel />
           
-        </main>
+        </div>
       </>
   );
 };

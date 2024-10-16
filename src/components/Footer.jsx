@@ -1,5 +1,4 @@
 import { Fa500Px, FaArtstation, FaCodepen, FaDribbble, FaGithub, FaInstagram, FaLinkedin, FaMedium, FaStackOverflow, FaTwitter, FaUnsplash, FaYoutube } from "react-icons/fa";
-import EnveloppeSVG from "../img/enveloppe.svg";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdOutlinePhoneAndroid } from "react-icons/md";
 import { IoChatboxEllipses } from "react-icons/io5";

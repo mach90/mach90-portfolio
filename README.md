@@ -1,14 +1,29 @@
 # mach90 Portfolio
 
 ## TO FIX
-- [x] Performance issue (found, image size)
+- [x] Performance issue (found, image size) 🟢
+- [ ] Video caching
 
 ## TO DO
-- [ ] Projects infinite scroll (30% done)
-    - [ ] Code (30% done)
-    - [ ] Lightbox (0% done)
-- [x] Parallax (100% done)
-    - [x] Art (100% done)
-    - [x] Code (100% done)
-- [x] Proper contact section (100% done)
-- [ ] GSAP animations (0% done)
+- [ ] Static/Dynamic version 🟡
+    - [x] Showcased projects infinite slider 🟢
+        - [x] Code 🟢
+    - [x] Projects sections with tab selection 🟢
+        - [x] Code 🟢
+    - [x] Parallax 🟢
+        - [x] Art 🟢
+        - [x] Code 🟢
+    - [x] Proper contact section 🟢
+    - [ ] SEO 🔴
+    - [ ] Refactoring 🔴
+
+- [ ] Animated/interactive version 🔴
+    - [ ] 3D assets 🔴
+    - [ ] GSAP animations 🔴
+
+
+## LEGEND
+🟢 100% done
+🟡 66% done
+🟠 33% done
+🔴 0% done🟤

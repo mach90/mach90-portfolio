@@ -44,9 +44,11 @@ export default function App() {
           <MultiLayerParallax />
           <Nav handleTheme={handleTheme} theme={theme} />
           <Header />
-          <ProjectsShowcase />
-          <ProjectsAll />
-          <Stacks />
+          <main>
+            <ProjectsShowcase />
+            <ProjectsAll />
+            <Stacks />
+          </main>
           <Footer />
       </div>
     </ReactLenis>

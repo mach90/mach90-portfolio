@@ -28,10 +28,9 @@ import BentoEnviroMP4 from "../video/bentoenviro.mp4";
 import TfGenMP4 from "../video/tfgen.mp4";
 import PrimusLitePlusMP4 from "../video/primusliteplus.mp4";
 
-
-/* //////////////////////////////////////////////////
+/* ████████████████████████████████████████████████████████████████████████████████████████████████████
 PROJECTS LIST DATA
-////////////////////////////////////////////////// */
+████████████████████████████████████████████████████████████████████████████████████████████████████ */
 const projectsList = [
     {
         title: "Travel Form Generator",

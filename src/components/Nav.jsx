@@ -9,7 +9,7 @@ function Nav({handleTheme, theme}) {
     /* //////////////////////////////////////////////////
     STYLES
     ////////////////////////////////////////////////// */
-    const navContainerStyle = "fixed w-screen z-10";
+    const navContainerStyle = "fixed w-screen z-20";
     const headerCoordsContainerStyle = "flex flex-row justify-between items-center py-2 px-4 lg:px-[10%] xl:px-[20%] bg-lightPrimary dark:bg-darkPrimary text-lightSubheading dark:text-darkSubheading border-b border-lightPrimaryBorder dark:border-darkPrimaryBorder";
     // const headerCoordsStickyContainerStyle = "flex flex-row justify-between items-center border-b border-dark py-2 border-b border-black px-4 bg-light dark:bg-dark w-full fixed top-0 z-20";
     const headerCoordsLogoContainerStyle = "flex flex-row gap-4 items-center"
@@ -73,7 +73,7 @@ function Nav({handleTheme, theme}) {
                     <a href="https://mach90.netlify.app"><img src={Logo} alt="Mach logo" className={headerCoordsLogoStyle} /></a>
                     <a href="https://mach90.netlify.app"><p className={headerCoordsNameStyle}>mach90<span className={headerCoordsJobStyle}>Frontend dev</span></p></a>
                 </div>
-                <div className={headerNavStyle}>
+                <nav className={headerNavStyle}>
                     <button onClick={(e) => handleScrollTo(e, 'top', 'smooth', 'start')} id="top-btn" className={headerNavItemStyle}><RiHome2Line /></button>
                     <button onClick={(e) => handleScrollTo(e, 'projects-showcase', 'smooth', 'start')} id="projects-btn" className={headerNavItemStyle}>Projects</button>
                     <button onClick={(e) => handleScrollTo(e, 'stacks', 'smooth', 'start')} id="stacks-btn" className={headerNavItemStyle}>Stacks</button>
@@ -81,20 +81,20 @@ function Nav({handleTheme, theme}) {
 
                     {theme !== "dark" && <button className={headerDarkmodeMenuLightStyle} onClick={() => handleTheme()}><MdOutlineLightMode /></button>}
                     {theme === "dark" && <button className={headerDarkmodeMenuDarkStyle} onClick={() => handleTheme()}><MdOutlineNightlight /></button>}
-                </div>
+                </nav>
                 <div className='display md:hidden'>
                     <button className={headerHamburgerMenuStyle} onClick={handleHamburgerMenuOpen}><RxHamburgerMenu /></button>
                 </div>
             </div>
             {hamburgerMenuOpen && <div className='bg-lightPrimary dark:bg-darkPrimary md:hidden'>
-                <div className={headerNavHamburgerStyle}>
-                <button onClick={(e) => handleScrollTo(e, 'top', 'smooth', 'start')} id="top-btn" className={headerNavItemStyle}><RiHome2Line /></button>
+                <nav className={headerNavHamburgerStyle}>
+                    <button onClick={(e) => handleScrollTo(e, 'top', 'smooth', 'start')} id="top-btn" className={headerNavItemStyle}><RiHome2Line /></button>
                     <button onClick={(e) => handleScrollTo(e, 'projects', 'smooth', 'start')} id="projects-btn" className={headerNavItemStyle}>Projects</button>
                     <button onClick={(e) => handleScrollTo(e, 'stacks', 'smooth', 'start')} id="stacks-btn" className={headerNavItemStyle}>Stacks</button>
                     <button onClick={(e) => handleScrollTo(e, 'contact', 'smooth')} id="contact-btn" className={headerNavItemStyle}>Contact</button>
                     {theme !== "dark" && <button className={headerDarkmodeMenuLightStyle} onClick={() => handleTheme()}><MdOutlineLightMode /></button>}
                     {theme === "dark" && <button className={headerDarkmodeMenuDarkStyle} onClick={() => handleTheme()}><MdOutlineNightlight /></button>}
-                </div>
+                </nav>
             </div>}
         </div>
     );

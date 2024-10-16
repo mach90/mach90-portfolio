@@ -10,8 +10,8 @@ import { LuCode2 } from "react-icons/lu";
 STYLES
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
 const projectGridContainerStyle = "relative flex flex-col";
-const projectGridImageStyle = "inset-0 rounded-lg shadow-md ";
-const projectGridInfosContainerStyle = "absolute flex flex-col items-end justify-end p-4 gap-2 rounded-lg bg-gradient-to-tl from-[#212121] via-[#212121dd] to-[#212121dd] h-full w-full";
+const projectGridImageStyle = "inset-0 shadow-md ";
+const projectGridInfosContainerStyle = "absolute flex flex-col items-end justify-end p-4 gap-2 bg-gradient-to-tl from-[#212121] via-[#212121dd] to-[#212121dd] h-full w-full transition-opacity duration-300 ease-in-out";
 const projectGridInfosTitleStyle = "font-heading font-bold text-darkValidation";
 const projectGridInfosTechStyle = "flex flex-row items-center gap-1 font-default font-normal text-darkValidation text-end";
 const projectGridInfosDescriptionStyle = "font-default font-normal text-white text-end text-xs";
@@ -37,13 +37,13 @@ export default function Project({title, description, status, version, techs, thu
     return (
         <div className={projectGridContainerStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <img src={thumbnail} alt={title} className={projectGridImageStyle} />
-            {showInfos && <div className={projectGridInfosContainerStyle}>
+            <div className={`${projectGridInfosContainerStyle} ${showInfos ? 'opacity-100' : 'opacity-0'}`}>
                 <h3 className={projectGridInfosTitleStyle}>{title}</h3>
-                {/* <p className={projectGridInfosTechStyle}><IoExtensionPuzzle size={12}/> {techs.at(0)}</p> */}
                 <p className={projectGridInfosDescriptionStyle}>{description}</p>
-                {link && <a className={projectInfosLinksStyle} href={link} target="_blank"><HiExternalLink /> Live version</a>}
-                {github && <a className={projectInfosLinksStyle} href={github} target="_blank"><LuCode2 /> Source code</a>}
-            </div>}
+                {/* <p className={projectGridInfosTechStyle}><IoExtensionPuzzle size={12}/> {techs.at(0)}</p> */}
+                {link && <a className={projectInfosLinksStyle} href={link} target="_blank" rel="noopener noreferrer"><HiExternalLink /> Live version</a>}
+                {github && <a className={projectInfosLinksStyle} href={github} target="_blank" rel="noopener noreferrer"><LuCode2 /> Source code</a>}
+            </div>
         </div>
     );
 }
