@@ -1,5 +1,12 @@
+/* ████████████████████████████████████████████████████████████████████████████████████████████████████
+IMPORTS
+████████████████████████████████████████████████████████████████████████████████████████████████████ */
 import { useState, useEffect } from "react";
 
+/* ████████████████████████████████████████████████████████████████████████████████████████████████████
+useLocalStorageState API
+Read and save on localstorage
+████████████████████████████████████████████████████████████████████████████████████████████████████ */
 export function useLocalStorageState(initialState, key) {
   const [value, setValue] = useState(function () {
     const storedValue = localStorage.getItem(key);

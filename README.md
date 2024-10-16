@@ -5,7 +5,7 @@
 - [ ] Video caching
 
 ## TO DO
-- [ ] Static/Dynamic version 🟡
+- [ ] Static/Dynamic version 🟢
     - [x] Showcased projects infinite slider 🟢
         - [x] Code 🟢
     - [x] Projects sections with tab selection 🟢
@@ -14,8 +14,8 @@
         - [x] Art 🟢
         - [x] Code 🟢
     - [x] Proper contact section 🟢
-    - [ ] SEO 🔴
-    - [ ] Refactoring 🔴
+    - [x] SEO 🟢
+    - [x] Refactoring 🟢
 
 - [ ] Animated/interactive version 🔴
     - [ ] 3D assets 🔴

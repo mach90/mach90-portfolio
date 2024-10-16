@@ -1,14 +1,14 @@
-/* ////////////////////////////////////////////////////////////////////////////////////////////////////
+/* ████████████████████████████████████████████████████████████████████████████████████████████████████
 IMPORTS
-//////////////////////////////////////////////////////////////////////////////////////////////////// */
+████████████████████████████████████████████████████████████████████████████████████████████████████ */
 import { useState } from "react";
 import { HiExternalLink } from "react-icons/hi";
 import { IoExtensionPuzzle } from "react-icons/io5";
 import { LuCode2 } from "react-icons/lu";
 
-/* ////////////////////////////////////////////////////////////////////////////////////////////////////
+/* ████████████████████████████████████████████████████████████████████████████████████████████████████
 STYLES
-//////////////////////////////////////////////////////////////////////////////////////////////////// */
+████████████████████████████████████████████████████████████████████████████████████████████████████ */
 const projectGridContainerStyle = "relative flex flex-col";
 const projectGridImageStyle = "inset-0 shadow-md ";
 const projectGridInfosContainerStyle = "absolute flex flex-col items-end justify-end p-4 gap-2 bg-gradient-to-tl from-[#212121] via-[#212121dd] to-[#212121dd] h-full w-full transition-opacity duration-300 ease-in-out";
@@ -17,12 +17,18 @@ const projectGridInfosTechStyle = "flex flex-row items-center gap-1 font-default
 const projectGridInfosDescriptionStyle = "font-default font-normal text-white text-end text-xs";
 const projectInfosLinksStyle = "flex flex-row gap-2 px-1 font-default bg-darkValidation hover:bg-white duration-200 text-black w-max items-center text-sm";
 
-/* ////////////////////////////////////////////////////////////////////////////////////////////////////
+/* ████████████████████████████████████████████████████████████████████████████████████████████████████
 PROJECT COMPONENT
-//////////////////////////////////////////////////////////////////////////////////////////////////// */
+████████████████████████████████████████████████████████████████████████████████████████████████████ */
 export default function Project({title, description, status, version, techs, thumbnail, link, github}) {
+    /* //////////////////////////////////////////////////
+    STATE
+    ////////////////////////////////////////////////// */
     const [showInfos, setShowInfos] = useState(false);
 
+    /* //////////////////////////////////////////////////
+    FUNCTIONS
+    ////////////////////////////////////////////////// */
     function handleMouseEnter() {
         setShowInfos(true);
     }

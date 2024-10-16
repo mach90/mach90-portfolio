@@ -26,7 +26,7 @@ function Stacks() {
     JSX
     ////////////////////////////////////////////////// */
     return (
-        <aside id="stacks" className={stacksContainerStyle}>
+        <section id="stacks" className={stacksContainerStyle}>
             <h2 className={stacksTitleStyle}>Stacks</h2>
             <p className={stacksSubtitleStyle}>I use popular and reknown modern technologies and tools</p>
             <div className={stacksListsContainerStyle}>
@@ -45,7 +45,7 @@ function Stacks() {
                     </div>
                 ))}
             </div>
-        </aside>
+        </section>
     );
 };
 

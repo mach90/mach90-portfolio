@@ -8,7 +8,6 @@ import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 /* ████████████████████████████████████████████████████████████████████████████████████████████████████
 STYLES
 ████████████████████████████████████████████████████████████████████████████████████████████████████ */
-// const carouselContainerStyle = "grid grid-cols-2 gap-8";
 const carouselContainerStyle = "w-full h-max flex flex-col gap-12 gap-40";
 
 const carouselSliderStyle = "flex flex-row justify-center";
@@ -51,30 +50,24 @@ function Carousel() {
     ////////////////////////////////////////////////// */
     function handlePreviousSlide() {
         /* LEFT SLIDE */
-        if(leftSlide === 0) setLeftSlide(showcasedProjects.at(-1).id);
-        if(leftSlide !== 0) setLeftSlide(leftSlide - 1);
+        leftSlide === 0 ? setLeftSlide(showcasedProjects.at(-1).id) : setLeftSlide(leftSlide - 1);
 
         /* CENTER SLIDE */
-        if(centerSlide === 0) setCenterSlide(showcasedProjects.at(-1).id);
-        if(centerSlide !== 0) setCenterSlide(centerSlide - 1);
+       centerSlide === 0 ? setCenterSlide(showcasedProjects.at(-1).id) : setCenterSlide(centerSlide - 1);
 
         /* RIGHT SLIDE */
-        if(rightSlide === 0) setRightSlide(showcasedProjects.at(-1).id);
-        if(rightSlide !== 0) setRightSlide(rightSlide - 1);
+        rightSlide === 0 ? setRightSlide(showcasedProjects.at(-1).id) : setRightSlide(rightSlide - 1);
     }
 
     function handleNextSlide() {
         /* LEFT SLIDE */
-        if(leftSlide === showcasedProjects.at(-1).id) setLeftSlide(showcasedProjects.at(0).id);
-        if(leftSlide !== showcasedProjects.at(-1).id) setLeftSlide(leftSlide + 1);
+        leftSlide === showcasedProjects.at(-1).id ? setLeftSlide(showcasedProjects.at(0).id) :  setLeftSlide(leftSlide + 1);
 
         /* CENTER SLIDE */
-        if(centerSlide === showcasedProjects.at(-1).id) setCenterSlide(showcasedProjects.at(0).id);
-        if(centerSlide !== showcasedProjects.at(-1).id) setCenterSlide(centerSlide + 1);
+        centerSlide === showcasedProjects.at(-1).id ? setCenterSlide(showcasedProjects.at(0).id) : setCenterSlide(centerSlide + 1);
 
         /* RIGHT SLIDE */
-        if(rightSlide === showcasedProjects.at(-1).id) setRightSlide(showcasedProjects.at(0).id);
-        if(rightSlide !== showcasedProjects.at(-1).id) setRightSlide(rightSlide + 1);
+        rightSlide === showcasedProjects.at(-1).id ? setRightSlide(showcasedProjects.at(0).id) : setRightSlide(rightSlide + 1);
     }
 
     /* //////////////////////////////////////////////////
@@ -82,11 +75,6 @@ function Carousel() {
     ////////////////////////////////////////////////// */
     return (
         <div id="carousel" className={carouselContainerStyle}>
-            {/* {
-                projectsData.filter((proj) => proj.showcased === true).map((proj, index) => {
-                    return <video key={index} autoPlay loop muted playsInline poster={proj.thumbnail} className="col-span-full"><source src={proj.video} type="video/mp4" />Your browser does not support the video tag.</video>
-                })
-            } */}
             <div id="carousel-slider" className={carouselSliderStyle}>
                 <div id="carousel-slide-left" className={carouselSlideLeftStyle} onClick={handlePreviousSlide}>
                     <video poster={showcasedProjects.at(leftSlide).thumbnail}><source src={showcasedProjects.at(leftSlide).video} type="video/mp4" />Your browser does not support the video tag.</video>

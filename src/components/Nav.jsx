@@ -1,51 +1,33 @@
-import React, { useEffect, useState } from 'react';
+/* ████████████████████████████████████████████████████████████████████████████████████████████████████
+IMPORTS
+████████████████████████████████████████████████████████████████████████████████████████████████████ */
+import React, { useState } from 'react';
 import ScrollTo from '../utils/ScrollTo';
-import { RxHamburgerMenu } from "react-icons/rx";
 import Logo from '../../public/logo.svg'
 import { MdOutlineLightMode, MdOutlineNightlight } from 'react-icons/md';
+import { RxHamburgerMenu } from "react-icons/rx";
 import { RiHome2Line } from 'react-icons/ri';
 
+/* ████████████████████████████████████████████████████████████████████████████████████████████████████
+STYLES
+████████████████████████████████████████████████████████████████████████████████████████████████████ */
+const navContainerStyle = "fixed w-screen z-20";
+const headerCoordsContainerStyle = "flex flex-row justify-between items-center py-2 px-4 lg:px-[10%] xl:px-[20%] bg-lightPrimary dark:bg-darkPrimary text-lightSubheading dark:text-darkSubheading border-b border-lightPrimaryBorder dark:border-darkPrimaryBorder";
+const headerCoordsLogoContainerStyle = "flex flex-row gap-4 items-center"
+const headerCoordsLogoStyle = "h-12 mix-blend-difference";
+const headerCoordsNameStyle = "flex flex-col uppercase font-heading font-black text-xl leading-none text-lightHeading dark:text-darkHeading";
+const headerCoordsJobStyle = "text-lightSubheading dark:text-darkSubheading text-sm";
+const headerHamburgerMenuStyle = "text-2xl";
+const headerNavStyle = "hidden md:flex flex-row gap-4 md:gap-8 lg:gap-12 font-bold font-standard text-sm md:text-lg  items-center";
+const headerNavHamburgerStyle = "h-screen flex flex-col gap-12 font-bold font-standard text-4xl items-center pt-20";
+const headerNavItemStyle = "text-lightSubheading dark:text-darkSubheading hover:text-lightHeading dark:hover:text-darkHeading duration-300";
+const headerDarkmodeMenuLightStyle = "text-lightSubheading hover:text-lightHeading text-2xl bg-lightSecondary rounded-full p-1";
+const headerDarkmodeMenuDarkStyle = "text-darkSubheading hover:text-darkHeading  text-2xl bg-darkSecondary rounded-full p-1";
+
+/* ████████████████████████████████████████████████████████████████████████████████████████████████████
+NAV COMPONENT
+████████████████████████████████████████████████████████████████████████████████████████████████████ */
 function Nav({handleTheme, theme}) {
-    /* //////////////////////////////////////////////////
-    STYLES
-    ////////////////////////////////////////////////// */
-    const navContainerStyle = "fixed w-screen z-20";
-    const headerCoordsContainerStyle = "flex flex-row justify-between items-center py-2 px-4 lg:px-[10%] xl:px-[20%] bg-lightPrimary dark:bg-darkPrimary text-lightSubheading dark:text-darkSubheading border-b border-lightPrimaryBorder dark:border-darkPrimaryBorder";
-    // const headerCoordsStickyContainerStyle = "flex flex-row justify-between items-center border-b border-dark py-2 border-b border-black px-4 bg-light dark:bg-dark w-full fixed top-0 z-20";
-    const headerCoordsLogoContainerStyle = "flex flex-row gap-4 items-center"
-    const headerCoordsLogoStyle = "h-12 mix-blend-difference";
-    const headerCoordsNameStyle = "flex flex-col uppercase font-heading font-black text-xl leading-none text-lightHeading dark:text-darkHeading";
-    const headerCoordsJobStyle = "text-lightSubheading dark:text-darkSubheading text-sm";
-    const headerHamburgerMenuStyle = "text-2xl";
-    const headerNavStyle = "hidden md:flex flex-row gap-4 md:gap-8 lg:gap-12 font-bold font-standard text-sm md:text-lg  items-center";
-    const headerNavHamburgerStyle = "h-screen flex flex-col gap-12 font-bold font-standard text-4xl items-center pt-20";
-    const headerNavItemStyle = "text-lightSubheading dark:text-darkSubheading hover:text-lightHeading dark:hover:text-darkHeading duration-300";
-    const headerDarkmodeMenuLightStyle = "text-lightSubheading hover:text-lightHeading text-2xl bg-lightSecondary rounded-full p-1";
-    const headerDarkmodeMenuDarkStyle = "text-darkSubheading hover:text-darkHeading  text-2xl bg-darkSecondary rounded-full p-1";
-    
-    /* //////////////////////////////////////////////////
-    SCROLL TRIGGER
-    ////////////////////////////////////////////////// */
-    // const [isSticky, setIsSticky] = useState(false);
-    
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         const scrollPosition = window.scrollY;
-            
-    //         if (scrollPosition >= 150 && !isSticky) {
-    //             setIsSticky(true);
-    //         }
-
-    //         if (scrollPosition < 140 && isSticky) {
-    //             setIsSticky(false);
-    //         }
-    //     };
-
-    //     window.addEventListener('scroll', handleScroll);
-        
-    //     return () => window.removeEventListener('scroll', handleScroll);
-    // }, [isSticky]);
-
     /* //////////////////////////////////////////////////
     HAMBURGER MENU
     ////////////////////////////////////////////////// */

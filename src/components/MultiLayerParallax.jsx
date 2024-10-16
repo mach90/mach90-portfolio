@@ -1,11 +1,23 @@
+/* ████████████████████████████████████████████████████████████████████████████████████████████████████
+IMPORTS
+████████████████████████████████████████████████████████████████████████████████████████████████████ */
+/* //////////////////////////////////////////////////
+DEPENDENCIES
+////////////////////////////////////////////////// */
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
+/* //////////////////////////////////////////////////
+IMAGES
+////////////////////////////////////////////////// */
 import ParallaxClouds from "../img/parallax/parallax-clouds.avif";
 import ParallaxPeaks from "../img/parallax/parallax-peaks.avif";
 // import ParallaxHills from "../img/parallax/parallax-hills.svg";
 // import ParallaxTrees from "../img/parallax/parallax-trees.svg";
 
+/* ████████████████████████████████████████████████████████████████████████████████████████████████████
+MULTILAYER PARALLAX COMPONENT
+████████████████████████████████████████████████████████████████████████████████████████████████████ */
 function MultiLayerParallax() {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({ //gives us a value between 0 and 1 depending on the scroll Y progress
@@ -17,6 +29,9 @@ function MultiLayerParallax() {
     // const hillsY = useTransform(scrollYProgress, [0, 1], ["130%", "30%"]);
     // const treesY = useTransform(scrollYProgress, [0, 1], ["180%", "40%"]);
 
+    /* //////////////////////////////////////////////////
+    JSX
+    ////////////////////////////////////////////////// */
     return (
         <div ref={ref} className="fixed w-full h-full overflow-hidden z-[-100]">
 
@@ -65,43 +80,3 @@ function MultiLayerParallax() {
 };
 
 export default MultiLayerParallax;
-
-/*
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
-
-function MultiLayerParallax() {
-    const ref = useRef(null);
-    const { scrollYProgress } = useScroll({ //gives us a value between 0 and 1 depending on the scroll Y progress
-        target: ref, //what we are recording
-        offset: ["start start", "end start"], //[starts when "element top intersects viewport top", ends when "element bottom intersects viewport top"]
-    });
-    const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-    const textY = useTransform(scrollYProgress, [0, 1], ["0%", "200%"]);
-
-    return (
-        <div ref={ref} className="w-full h-screen overflow-hidden relative grid place-content-center">
-            <motion.div className="absolute inset-0 z-0" style={{
-                backgroundImage: 'url(/image-full.png)',
-                backgroundPosition: 'bottom',
-                backgroundSize: 'cover',
-                y: backgroundY,
-            }}>
-            </motion.div>
-            <motion.h1 className="font-bold text-black text-7xl md:text-9xl relative z-10" style={{
-                y: textY
-            }}>
-                PARALLAX
-            </motion.h1>
-            <div className="absolute inset-0 z-20" style={{
-                backgroundImage: 'url(/image-bottom.png)',
-                backgroundPosition: 'bottom',
-                backgroundSize: 'cover',
-                }}>
-            </div>
-        </div>
-    );
-};
-
-export default MultiLayerParallax;
-*/

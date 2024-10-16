@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* * {
-    @apply transition-colors duration-75;
-    @apply transition-transform duration-300;
-} */
-
 ::-webkit-scrollbar {
     display: none;
 }

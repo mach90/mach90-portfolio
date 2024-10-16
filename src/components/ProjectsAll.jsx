@@ -56,7 +56,7 @@ function ProjectsAll() {
     JSX
     ////////////////////////////////////////////////// */
     return (
-        <div className={projectsContainerStyle}>
+        <section className={projectsContainerStyle}>
             <div className={projectsContainerTitleContainerStyle}>
                 <h2 className={projectsContainerTitleStyle}>All my <span className={projectsContainerTitleSpanStyle}>Projects</span></h2>
                 <p className={projectsContainerPhraseStyle}>Personal or guided projects from online courses by some of the best-rated instructors. Each project was essential in helping me learn and apply key concepts.</p>
@@ -83,7 +83,7 @@ function ProjectsAll() {
                     })
                 }
             </div>
-        </div>
+        </section>
     );
 };
 

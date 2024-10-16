@@ -27,17 +27,26 @@ import Footer from './components/Footer';
 APP COMPONENT
 ████████████████████████████████████████████████████████████████████████████████████████████████████ */
 export default function App() {
+  /* //////////////////////////////////////////////////
+  DARKMODE STATE AND FUNCTION
+  ////////////////////////////////////////////////// */
   const [theme, setTheme] = useLocalStorageState([], "theme");
-
-  const lenis = useLenis(({ scroll }) => {
-    // called every scroll
-  })
 
   function handleTheme() {
     if(theme !== "dark") setTheme("dark");
     if(theme === "dark") setTheme("light");
   }
 
+  /* //////////////////////////////////////////////////
+  LENIS SMOOTH SCROLL
+  ////////////////////////////////////////////////// */
+  const lenis = useLenis(({ scroll }) => {
+    // called every scroll
+  })
+
+  /* //////////////////////////////////////////////////
+  JSX
+  ////////////////////////////////////////////////// */
   return (
     <ReactLenis root>
       <div className={theme === "dark" ? "dark" : ""}>
