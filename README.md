@@ -5,7 +5,7 @@
 - [ ] Video caching
 
 ## TO DO
-- [ ] Static/Dynamic version 🟢
+- [x] Static/Dynamic version 🟢
     - [x] Showcased projects infinite slider 🟢
         - [x] Code 🟢
     - [x] Projects sections with tab selection 🟢
@@ -19,7 +19,7 @@
 
 - [ ] Animated/interactive version 🔴
     - [ ] 3D assets 🔴
-    - [ ] GSAP animations 🔴
+    - [ ] GSAP/Framer motion animations 🔴
 
 
 ## LEGEND

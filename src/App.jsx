@@ -18,6 +18,7 @@ COMPONENTS
 import MultiLayerParallax from './components/MultiLayerParallax';
 import Nav from './components/Nav';
 import Header from './components/Header';
+import Intro from './components/Intro';
 import ProjectsShowcase from './components/ProjectsShowcase';
 import ProjectsAll from './components/ProjectsAll';
 import Stacks from './components/Stacks';
@@ -33,8 +34,7 @@ export default function App() {
   const [theme, setTheme] = useLocalStorageState([], "theme");
 
   function handleTheme() {
-    if(theme !== "dark") setTheme("dark");
-    if(theme === "dark") setTheme("light");
+    theme === "dark" ? setTheme("light") : setTheme("dark");
   }
 
   /* //////////////////////////////////////////////////
@@ -54,6 +54,7 @@ export default function App() {
           <Nav handleTheme={handleTheme} theme={theme} />
           <Header />
           <main>
+            <Intro />
             <ProjectsShowcase />
             <ProjectsAll />
             <Stacks />

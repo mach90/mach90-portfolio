@@ -25,7 +25,7 @@ function MultiLayerParallax() {
         offset: ["start start", "end start"], //[starts when "element top intersects viewport top", ends when "element bottom intersects viewport top"]
     });
     const cloudsY = useTransform(scrollYProgress, [0, 1], ["0%", "-10%"]); //start at X% and ends at X% of the ref element height
-    const peaksY = useTransform(scrollYProgress, [0, 1], ["50%", "10%"]);
+    const peaksY = useTransform(scrollYProgress, [0, 1], ["30%", "10%"]);
     // const hillsY = useTransform(scrollYProgress, [0, 1], ["130%", "30%"]);
     // const treesY = useTransform(scrollYProgress, [0, 1], ["180%", "40%"]);
 

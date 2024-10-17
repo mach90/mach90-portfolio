@@ -12,7 +12,7 @@ STYLES
 const footerStyle = "px-6 py-6 lg:px-[10%] xl:px-[20%] flex flex-col justify-between items-end bg-lightPrimary dark:bg-darkPrimary bg-opacity-100 dark:bg-opacity-100 text-lightSubheading dark:text-darkSubheading font-heading text-center h-screen";
 const footerContainerStyle = "flex flex-col justify-between items-center h-full w-full";
 
-const footerContainerUpperStyle = "flex flex-col gap-2 justify-center items-center h-full w-full font-black";s
+const footerContainerUpperStyle = "flex flex-col gap-2 justify-center items-center h-full w-full font-black";
 const footerContactContainerStyle = "grid grid-rows-2 justify-center items-center bg-lightSecondary dark:bg-darkSecondary p-4 rounded-lg border-b-8 border-lightValidation dark:border-darkValidation";
 const footerContactIconStyle = "text-5xl pb-3 w-full";
 const footerContactIconAnimateStyle = "hover:scale-110 duration-200";

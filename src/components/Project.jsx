@@ -12,10 +12,10 @@ STYLES
 const projectGridContainerStyle = "relative flex flex-col";
 const projectGridImageStyle = "inset-0 shadow-md ";
 const projectGridInfosContainerStyle = "absolute flex flex-col items-end justify-end p-4 gap-2 bg-gradient-to-tl from-[#212121] via-[#212121dd] to-[#212121dd] h-full w-full transition-opacity duration-300 ease-in-out";
-const projectGridInfosTitleStyle = "font-heading font-bold text-darkValidation";
-const projectGridInfosTechStyle = "flex flex-row items-center gap-1 font-default font-normal text-darkValidation text-end";
+const projectGridInfosTitleStyle = "font-heading font-bold text-lightTertiaryAccent";
+const projectGridInfosTechStyle = "flex flex-row items-center gap-1 font-default font-normal text-lightTertiaryAccent text-end";
 const projectGridInfosDescriptionStyle = "font-default font-normal text-white text-end text-xs";
-const projectInfosLinksStyle = "flex flex-row gap-2 px-1 font-default bg-darkValidation hover:bg-white duration-200 text-black w-max items-center text-sm";
+const projectInfosLinksStyle = "flex flex-row gap-2 px-1 font-default bg-lightTertiaryAccent hover:bg-darkTertiaryAccent duration-200 text-black w-max items-center text-sm";
 
 /* ████████████████████████████████████████████████████████████████████████████████████████████████████
 PROJECT COMPONENT

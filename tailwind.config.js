@@ -40,6 +40,8 @@ export default {
         lightSecondaryAccent: "#e54324",
         darkPrimaryAccent: "#4785c2",
         darkSecondaryAccent: "#d1e0f0",
+        lightTertiaryAccent: "#ac5efb",
+        darkTertiaryAccent: "#ead7fe",
         lightValidation: "#3fa153",
         darkValidation: "#67b342",
       },

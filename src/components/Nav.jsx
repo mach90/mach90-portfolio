@@ -2,6 +2,7 @@
 IMPORTS
 ████████████████████████████████████████████████████████████████████████████████████████████████████ */
 import React, { useState } from 'react';
+import { useRive } from '@rive-app/react-canvas';
 import ScrollTo from '../utils/ScrollTo';
 import Logo from '../../public/logo.svg'
 import { MdOutlineLightMode, MdOutlineNightlight } from 'react-icons/md';
@@ -14,7 +15,7 @@ STYLES
 const navContainerStyle = "fixed w-screen z-20";
 const headerCoordsContainerStyle = "flex flex-row justify-between items-center py-2 px-4 lg:px-[10%] xl:px-[20%] bg-lightPrimary dark:bg-darkPrimary text-lightSubheading dark:text-darkSubheading border-b border-lightPrimaryBorder dark:border-darkPrimaryBorder";
 const headerCoordsLogoContainerStyle = "flex flex-row gap-4 items-center"
-const headerCoordsLogoStyle = "h-12 mix-blend-difference";
+const headerCoordsLogoStyle = "h-12 w-24 mix-blend-difference";
 const headerCoordsNameStyle = "flex flex-col uppercase font-heading font-black text-xl leading-none text-lightHeading dark:text-darkHeading";
 const headerCoordsJobStyle = "text-lightSubheading dark:text-darkSubheading text-sm";
 const headerHamburgerMenuStyle = "text-2xl";
@@ -46,13 +47,26 @@ function Nav({handleTheme, theme}) {
     }
 
     /* //////////////////////////////////////////////////
+    RIVE LOGO
+    ////////////////////////////////////////////////// */
+    const { rive, RiveComponent } = useRive({
+        src: '../../public/logo.riv',
+        stateMachines: "Entering",
+        autoplay: true,
+    });
+
+    /* //////////////////////////////////////////////////
     JSX
     ////////////////////////////////////////////////// */
     return (
         <div className={navContainerStyle}>
             <div className={headerCoordsContainerStyle}>
                 <div className={headerCoordsLogoContainerStyle}>
-                    <a href="https://mach90.netlify.app"><img src={Logo} alt="Mach logo" className={headerCoordsLogoStyle} /></a>
+                    {/* <a href="https://mach90.netlify.app"><img src={Logo} alt="Mach logo" className={headerCoordsLogoStyle} /></a> */}
+                    <a href="https://mach90.netlify.app"><RiveComponent className={headerCoordsLogoStyle}
+                        onMouseEnter={() => rive && rive.play("Hello")}
+                        onMouseLeave={() => rive && rive.play("Idle Logo")}
+                    /></a>
                     <a href="https://mach90.netlify.app"><p className={headerCoordsNameStyle}>mach90<span className={headerCoordsJobStyle}>Frontend dev</span></p></a>
                 </div>
                 <nav className={headerNavStyle}>
