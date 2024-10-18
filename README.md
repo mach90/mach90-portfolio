@@ -17,9 +17,9 @@
     - [x] SEO 🟢
     - [x] Refactoring 🟢
 
-- [ ] Animated/interactive version 🔴
+- [ ] Animated/interactive version 🟡
     - [ ] 3D assets 🔴
-    - [ ] GSAP/Framer motion animations 🔴
+    - [x] GSAP/Framer motion animations 🟢
 
 
 ## LEGEND

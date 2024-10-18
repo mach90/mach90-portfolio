@@ -20,6 +20,10 @@ ICONS
 import { MdOutlineLightMode, MdOutlineNightlight } from 'react-icons/md';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RiHome2Line } from 'react-icons/ri';
+/* //////////////////////////////////////////////////
+RIVE ANIMATION
+////////////////////////////////////////////////// */
+import LogoRive from '../rive/logo.riv';
 
 /* ████████████████████████████████████████████████████████████████████████████████████████████████████
 STYLES
@@ -62,7 +66,7 @@ function Nav({handleTheme, theme}) {
     RIVE LOGO
     ////////////////////////////////////////////////// */
     const { rive, RiveComponent } = useRive({
-        src: '../../public/logo.riv',
+        src: LogoRive,
         stateMachines: "Entering",
         autoplay: true,
     });
