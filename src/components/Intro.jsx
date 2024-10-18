@@ -33,7 +33,7 @@ function Intro() {
     return (
         <div id="intro" className={introContainerStyle}>
             <Paragraph paragraph={paragraph}/>
-            <div className={headerDescriptionContainerStyle}>
+            {/* <div className={headerDescriptionContainerStyle}>
                 <div className={headerDescriptionCardStyle}>
                     <p className={headerDescriptionCardTextStyle}>Principled and detail-oriented, valuing quality and security.</p>
                     <div className={headerDescriptionCardTagsContainerStyle}>
@@ -48,7 +48,7 @@ function Intro() {
                         <p>mach90</p>
                     </a>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

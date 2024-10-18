@@ -58,8 +58,8 @@ export default function Footer() {
                                 <p className={footerContactSubtitleStyle}>France</p>
                             </div>
                             <div className={footerContactContainerStyle}>
-                                <a href={`mailto:${bill}.${gates}@${gmail}.com?subject=${subject}&body=${body}`} ><IoChatboxEllipses className={`${footerContactIconStyle} + ${footerContactIconAnimateStyle}`} /></a>
-                                <p className={footerContactTitleStyle}>{`${bill}.${gates} at ${gmail}.com`}</p>
+                                <a href={`mailto:${bill}${gates}@${gmail}.com?subject=${subject}&body=${body}`} ><IoChatboxEllipses className={`${footerContactIconStyle} + ${footerContactIconAnimateStyle}`} /></a>
+                                <p className={footerContactTitleStyle}>{`${bill}${gates} at ${gmail}.com`}</p>
                                 <p className={footerContactSubtitleStyle}>I read all my mails</p>
                             </div>
                             <div className={footerContactContainerStyle}>
@@ -72,18 +72,18 @@ export default function Footer() {
                     <div className={footerContainerLowerStyle}>
                         <p className={footerCopyrightStyle}>© 2024 mach90</p>
                         <div className={socialsContainerStyle}>
-                            <a href="#" target="_blank" className={socialsItemStyle}><FaGithub /></a>
-                            <a href="#" target="_blank" className={socialsItemStyle}><FaLinkedin /></a>
-                            <a href="#" target="_blank" className={socialsItemStyle}><FaTwitter /></a>
-                            <a href="#" target="_blank" className={socialsItemStyle}><FaStackOverflow /></a>
-                            <a href="#" target="_blank" className={socialsItemStyle}><FaMedium /></a>
-                            {/* <a href="#" target="_blank" className={socialsItemStyle}><FaYoutube /></a>
-                            <a href="#" target="_blank" className={socialsItemStyle}><FaInstagram /></a>
-                            <a href="#" target="_blank" className={socialsItemStyle}><FaDribbble /></a>
-                            <a href="#" target="_blank" className={socialsItemStyle}><FaCodepen /></a>
-                            <a href="#" target="_blank" className={socialsItemStyle}><Fa500Px /></a>
-                            <a href="#" target="_blank" className={socialsItemStyle}><FaUnsplash /></a>
-                            <a href="#" target="_blank" className={socialsItemStyle}><FaArtstation /></a> */}
+                            <a href="https://github.com/mach90" target="_blank" className={socialsItemStyle}><FaGithub /></a>
+                            {/* <a href="#" target="_blank" className={socialsItemStyle}><FaLinkedin /></a> */}
+                            {/* <a href="#" target="_blank" className={socialsItemStyle}><FaTwitter /></a> */}
+                            {/* <a href="https://stackoverflow.com/users/27854084" target="_blank" className={socialsItemStyle}><FaStackOverflow /></a> */}
+                            {/* <a href="medium.com/@mach90" target="_blank" className={socialsItemStyle}><FaMedium /></a> */}
+                            {/* <a href="#" target="_blank" className={socialsItemStyle}><FaYoutube /></a> */}
+                            {/* <a href="#" target="_blank" className={socialsItemStyle}><FaInstagram /></a> */}
+                            {/* <a href="https://dribbble.com/mach90" target="_blank" className={socialsItemStyle}><FaDribbble /></a> */}
+                            {/* <a href="https://codepen.io/mach90" target="_blank" className={socialsItemStyle}><FaCodepen /></a> */}
+                            <a href="https://unsplash.com/@mach90" target="_blank" className={socialsItemStyle}><FaUnsplash /></a>
+                            {/* <a href="#" target="_blank" className={socialsItemStyle}><Fa500Px /></a> */}
+                            {/* <a href="https://www.artstation.com/user-7925428" target="_blank" className={socialsItemStyle}><FaArtstation /></a> */}
                         </div>
                     </div>
                 </div>

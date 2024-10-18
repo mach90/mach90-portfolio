@@ -1,10 +1,22 @@
 /* ████████████████████████████████████████████████████████████████████████████████████████████████████
 IMPORTS
 ████████████████████████████████████████████████████████████████████████████████████████████████████ */
+/* //////////////////////////////////////////////////
+DEPENDENCIES
+////////////////////////////////////////////////// */
 import React, { useState } from 'react';
 import { useRive } from '@rive-app/react-canvas';
+/* //////////////////////////////////////////////////
+UTILS
+////////////////////////////////////////////////// */
 import ScrollTo from '../utils/ScrollTo';
-import Logo from '../../public/logo.svg'
+/* //////////////////////////////////////////////////
+COMPONENTS
+////////////////////////////////////////////////// */
+import Text3d from "./Text3d";
+/* //////////////////////////////////////////////////
+ICONS
+////////////////////////////////////////////////// */
 import { MdOutlineLightMode, MdOutlineNightlight } from 'react-icons/md';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RiHome2Line } from 'react-icons/ri';
@@ -71,9 +83,9 @@ function Nav({handleTheme, theme}) {
                 </div>
                 <nav className={headerNavStyle}>
                     <button onClick={(e) => handleScrollTo(e, 'top', 'smooth', 'start')} id="top-btn" className={headerNavItemStyle}><RiHome2Line /></button>
-                    <button onClick={(e) => handleScrollTo(e, 'projects-showcase', 'smooth', 'start')} id="projects-btn" className={headerNavItemStyle}>Projects</button>
-                    <button onClick={(e) => handleScrollTo(e, 'stacks', 'smooth', 'start')} id="stacks-btn" className={headerNavItemStyle}>Stacks</button>
-                    <button onClick={(e) => handleScrollTo(e, 'contact', 'smooth')} id="contact-btn" className={headerNavItemStyle}>Contact</button>
+                    <button onClick={(e) => handleScrollTo(e, 'projects-showcase', 'smooth', 'start')} id="projects-btn" className={headerNavItemStyle}><Text3d primary={"Projects"} secondary={"Projects"}/></button>
+                    <button onClick={(e) => handleScrollTo(e, 'stacks', 'smooth', 'start')} id="stacks-btn" className={headerNavItemStyle}><Text3d primary={"Stacks"} secondary={"Stacks"}/></button>
+                    <button onClick={(e) => handleScrollTo(e, 'contact', 'smooth')} id="contact-btn" className={headerNavItemStyle}><Text3d primary={"Contact"} secondary={"Contact"}/></button>
 
                     {theme !== "dark" && <button className={headerDarkmodeMenuLightStyle} onClick={() => handleTheme()}><MdOutlineLightMode /></button>}
                     {theme === "dark" && <button className={headerDarkmodeMenuDarkStyle} onClick={() => handleTheme()}><MdOutlineNightlight /></button>}
@@ -85,9 +97,9 @@ function Nav({handleTheme, theme}) {
             {hamburgerMenuOpen && <div className='bg-lightPrimary dark:bg-darkPrimary md:hidden'>
                 <nav className={headerNavHamburgerStyle}>
                     <button onClick={(e) => handleScrollTo(e, 'top', 'smooth', 'start')} id="top-btn" className={headerNavItemStyle}><RiHome2Line /></button>
-                    <button onClick={(e) => handleScrollTo(e, 'projects', 'smooth', 'start')} id="projects-btn" className={headerNavItemStyle}>Projects</button>
-                    <button onClick={(e) => handleScrollTo(e, 'stacks', 'smooth', 'start')} id="stacks-btn" className={headerNavItemStyle}>Stacks</button>
-                    <button onClick={(e) => handleScrollTo(e, 'contact', 'smooth')} id="contact-btn" className={headerNavItemStyle}>Contact</button>
+                    <button onClick={(e) => handleScrollTo(e, 'projects', 'smooth', 'start')} id="projects-btn" className={headerNavItemStyle}><Text3d primary={"Projects"} secondary={"Projects"}/></button>
+                    <button onClick={(e) => handleScrollTo(e, 'stacks', 'smooth', 'start')} id="stacks-btn" className={headerNavItemStyle}><Text3d primary={"Stacks"} secondary={"Stacks"}/></button>
+                    <button onClick={(e) => handleScrollTo(e, 'contact', 'smooth')} id="contact-btn" className={headerNavItemStyle}><Text3d primary={"Contact"} secondary={"Contact"}/></button>
                     {theme !== "dark" && <button className={headerDarkmodeMenuLightStyle} onClick={() => handleTheme()}><MdOutlineLightMode /></button>}
                     {theme === "dark" && <button className={headerDarkmodeMenuDarkStyle} onClick={() => handleTheme()}><MdOutlineNightlight /></button>}
                 </nav>

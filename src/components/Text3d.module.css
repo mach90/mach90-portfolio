@@ -1,0 +1,37 @@
+.textContainer{
+    position: relative;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.4s;
+}
+  
+.textContainer p{
+    font-size: 1em;
+    line-height: 2em;
+    font-weight: 700;
+    margin: 0px;
+    color: #808080;
+    transition: all 0.4s;
+}
+  
+.textContainer .secondary{
+    position: absolute;
+    top: 0;
+    color: #3fa153;
+    opacity: 0;
+    transform: rotateX(-90deg) translateY(1em);
+    transform-origin: bottom center;
+}
+
+.textContainer:hover{ 
+    transform: rotateX(90deg);
+}
+
+.textContainer:hover .primary{
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.textContainer:hover .secondary{
+    opacity: 1;
+}
