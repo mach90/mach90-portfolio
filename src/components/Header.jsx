@@ -7,7 +7,7 @@ import PortfolioSVG from "../img/portfolio.svg";
 /* ████████████████████████████████████████████████████████████████████████████████████████████████████
 STYLES
 ████████████████████████████████████████████████████████████████████████████████████████████████████ */
-const headerContainerStyle = "px-4 pt-40 pb-24 lg:px-[10%] xl:px-[20%] flex flex-col gap-24 justify-center items-center bg-lightPrimary dark:bg-darkPrimary bg-opacity-0 dark:bg-opacity-[93%]";
+const headerContainerStyle = "px-4 pt-40 pb-24 lg:px-[10%] xl:px-[20%] flex flex-col gap-24 justify-center items-center bg-lightPrimary dark:bg-darkPrimary bg-opacity-0 dark:bg-opacity-[93%] h-screen";
 
 const headerPortfolio = "w-full animate-fade-in";
 
