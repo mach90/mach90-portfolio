@@ -7,9 +7,9 @@ import PortfolioSVG from "../img/portfolio.svg";
 /* ████████████████████████████████████████████████████████████████████████████████████████████████████
 STYLES
 ████████████████████████████████████████████████████████████████████████████████████████████████████ */
-const headerContainerStyle = "px-4 pt-40 pb-24 lg:px-[10%] xl:px-[20%] flex flex-col gap-24 justify-center items-center bg-lightPrimary dark:bg-darkPrimary bg-opacity-0 dark:bg-opacity-[93%] h-screen";
+const headerContainerStyle = "px-4 pt-40 pb-24 lg:px-[10%] xl:px-[20%] flex flex-col gap-24 justify-center items-center bg-lightPrimary dark:bg-darkPrimary bg-opacity-0 dark:bg-opacity-70 h-screen";
 
-const headerPortfolio = "w-full animate-fade-in";
+const headerPortfolio = "w-full animate-fade-in fill-white";
 
 // const headerDescriptionContainerStyle = "w-full grid grid-cols-3 gap-0";
 
@@ -33,7 +33,7 @@ function Header() {
     return (
         <>
             <header className={headerContainerStyle}>         
-                <img id="portfolioSVG" src={PortfolioSVG} alt="Portfolio SVG" width="100%" className={headerPortfolio}/>
+                <img id="portfolioSVG" src={PortfolioSVG} alt="Portfolio SVG" width="100%" className={headerPortfolio} />
 
                 {/* <div className={headerDescriptionContainerStyle}>
                     <div className={headerDescriptionCardStyle}>

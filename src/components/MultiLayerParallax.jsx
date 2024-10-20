@@ -11,7 +11,7 @@ import { useRef } from "react";
 IMAGES
 ////////////////////////////////////////////////// */
 import ParallaxClouds from "../img/parallax/parallax-clouds.avif";
-import ParallaxPeaks from "../img/parallax/parallax-peaks.avif";
+import ParallaxPeaks from "../img/parallax/parallax-bottom.avif";
 // import ParallaxHills from "../img/parallax/parallax-hills.svg";
 // import ParallaxTrees from "../img/parallax/parallax-trees.svg";
 
