@@ -5,6 +5,7 @@ import { Fa500Px, FaArtstation, FaCodepen, FaDribbble, FaGithub, FaInstagram, Fa
 import { FaLocationDot } from "react-icons/fa6";
 import { MdOutlinePhoneAndroid } from "react-icons/md";
 import { IoChatboxEllipses } from "react-icons/io5";
+import { SiCodewars } from "react-icons/si";
 
 /* ████████████████████████████████████████████████████████████████████████████████████████████████████
 STYLES
@@ -80,7 +81,8 @@ export default function Footer() {
                             {/* <a href="#" target="_blank" className={socialsItemStyle}><FaYoutube /></a> */}
                             {/* <a href="#" target="_blank" className={socialsItemStyle}><FaInstagram /></a> */}
                             {/* <a href="https://dribbble.com/mach90" target="_blank" className={socialsItemStyle}><FaDribbble /></a> */}
-                            {/* <a href="https://codepen.io/mach90" target="_blank" className={socialsItemStyle}><FaCodepen /></a> */}
+                            <a href="https://codepen.io/mach90" target="_blank" className={socialsItemStyle}><FaCodepen /></a>
+                            <a href="https://www.codewars.com/users/mach90" target="_blank" className={socialsItemStyle}><SiCodewars /></a>
                             <a href="https://unsplash.com/@mach90" target="_blank" className={socialsItemStyle}><FaUnsplash /></a>
                             {/* <a href="#" target="_blank" className={socialsItemStyle}><Fa500Px /></a> */}
                             {/* <a href="https://www.artstation.com/user-7925428" target="_blank" className={socialsItemStyle}><FaArtstation /></a> */}

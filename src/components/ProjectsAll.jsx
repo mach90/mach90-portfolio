@@ -37,7 +37,7 @@ const projectsContainerMenuTabsStyle = "flex flex-row items-center border-2 bord
 const projectsContainerMenuTabSubtitleStyle = "font-medium font-heading text-lightSubheading dark:text-darkSubheading text-sm md:text-lg lg:text-xl"
 const projectsContainerMenuTabInactiveStyle = "py-2 px-4 hover:text-lightHeading dark:hover:text-darkHeading duration-200";
 const projectsContainerMenuTabActiveStyle = "py-2 px-4 text-lightHeading dark:text-darkHeading duration-200 h-full";
-const projectsGridContainerStyle = "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-6";
+const projectsGridContainerStyle = "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6";
 
 /* ████████████████████████████████████████████████████████████████████████████████████████████████████
 ALL PROJECTS COMPONENT

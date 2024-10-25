@@ -43,7 +43,7 @@ const stacksLists = [
             { techName: "Tailwind", techLogo: LogoTailwind, certification: false },
             { techName: "Photoshop", techLogo: LogoPhotoshop, certification: false },
             { techName: "Illustrator", techLogo: LogoIllustrator, certification: false },
-            // { techName: "Rive", techLogo: LogoRive },
+            { techName: "Rive", techLogo: LogoRive },
         ]
     },
     {

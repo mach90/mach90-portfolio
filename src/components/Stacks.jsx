@@ -15,10 +15,11 @@ function Stacks() {
     const stacksTitleStyle = "font-heading px-6 py-2 rounded-full border-4 border-lightSecondaryBorder dark:border-darkSecondaryBorder uppercase text-center text-5xl font-black text-lightSubheading dark:text-darkSubheading w-max";
     const stacksSubtitleStyle = "font-default font-medium text-lg text-lightText dark:text-darkText";
     const stacksListsContainerStyle = "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-center w-full";
-    const stacksListContainerStyle = "flex flex-col gap-2 w-full p-4 bg-lightPrimary dark:bg-darkPrimary shadow-sm border-0 border-lightSecondaryBorder dark:border-darkSecondaryBorder rounded-lg hover:scale-105 duration-300"
-    const stacksListTitleStyle = "text-lightSubheading dark:text-darkSubheading uppercase font-heading font-black text-xl border-b border-lightSecondaryBorder dark:border-darkSecondaryBorder px-2 pb-2 text-center";
-    const stacksListStyle = "text-lightSubheading dark:text-darkSubheading font-default font-medium flex flex-col gap-2 text-sm sm:text-lg lg:text-xl";
-    const stacksListItemStyle = "flex flex-row gap-2 items-center px-2";
+    const stacksListContainerStyle = "flex flex-col gap-0 p-0 w-full duration-300"
+    const stacksListContainerTopStyle = "bg-lightPrimary dark:bg-darkPrimary h-16 card-clip-path border-b border-lightSecondaryBorder dark:border-darkSecondaryBorder";
+    const stacksListTitleStyle = "bg-lightPrimary dark:bg-darkPrimary text-lightSubheading dark:text-darkSubheading uppercase font-heading font-black text-xl border-b border-lightSecondaryBorder dark:border-darkSecondaryBorder px-2 py-2 text-center";
+    const stacksListStyle = "text-lightSubheading dark:text-darkSubheading font-default font-medium flex flex-col gap-0 text-sm sm:text-lg lg:text-xl";
+    const stacksListItemStyle = "flex flex-row gap-2 items-center px-[20%] card-clip-path bg-gradient-to-b from-neutral-200 dark:from-neutral-950 to-lightPrimary dark:to-darkPrimary py-2 border-b-8 border-lightSecondaryBorder dark:border-darkPrimaryBorder hover:scale-105 rounded-b-2xl duration-200";
     const stacksListItemLogoStyle = "text-textlight w-4";
     const stacksListItemCertificationStyle = "hover:brightness-75 dark:hover:brightness-150 duration-200"
     
@@ -32,6 +33,7 @@ function Stacks() {
             <div className={stacksListsContainerStyle}>
                 {stacksData.map((list, index) => (
                     <div className={stacksListContainerStyle} key={index}>
+                        <div className={stacksListContainerTopStyle}></div>
                         <h3 className={stacksListTitleStyle}>{list.listTitle}</h3>
                         <div className={stacksListStyle}>
                             {list.stacks.map((tech, techIndex) => (

@@ -2,7 +2,8 @@
 
 ## TO FIX
 - [x] Performance issue (found, image size) 🟢
-- [ ] Video caching
+- [ ] Video caching 🔴
+- [ ] Image loading using https://blurha.sh/ 🔴
 
 ## TO DO
 - [x] Static/Dynamic version 🟢
@@ -17,13 +18,14 @@
     - [x] SEO 🟢
     - [x] Refactoring 🟢
 
-- [ ] Animated/interactive version 🟡
+- [/] Animated/interactive version 🟤
     - [ ] 3D assets 🔴
-    - [x] GSAP/Framer motion animations 🟢
+    - [/] GSAP/Framer motion animations 🟠
 
 
-## LEGEND
+### LEGEND
 🟢 100% done
-🟡 66% done
-🟠 33% done
-🔴 0% done🟤
+🟡 75% done
+🟠 50% done
+🟤 25% done
+🔴 0% done
