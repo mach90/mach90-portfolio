@@ -17,9 +17,9 @@ import Text3d from "./Text3d";
 /* //////////////////////////////////////////////////
 ICONS
 ////////////////////////////////////////////////// */
-import { MdOutlineLightMode, MdOutlineNightlight } from 'react-icons/md';
+import { MdClose, MdOutlineLightMode, MdOutlineNightlight } from 'react-icons/md';
 import { RxHamburgerMenu } from "react-icons/rx";
-import { RiHome2Line } from 'react-icons/ri';
+import { RiCloseLargeFill, RiHome2Line } from 'react-icons/ri';
 /* //////////////////////////////////////////////////
 RIVE ANIMATION
 ////////////////////////////////////////////////// */
@@ -95,7 +95,7 @@ function Nav({handleTheme, theme}) {
                     {theme === "dark" && <button className={headerDarkmodeMenuDarkStyle} onClick={() => handleTheme()}><MdOutlineNightlight /></button>}
                 </nav>
                 <div className='display md:hidden'>
-                    <button className={headerHamburgerMenuStyle} onClick={handleHamburgerMenuOpen}><RxHamburgerMenu /></button>
+                    <button className={headerHamburgerMenuStyle} onClick={handleHamburgerMenuOpen}>{hamburgerMenuOpen ? <RiCloseLargeFill /> : <RxHamburgerMenu />}</button>
                 </div>
             </div>
             {hamburgerMenuOpen && <div className='bg-lightPrimary dark:bg-darkPrimary md:hidden'>

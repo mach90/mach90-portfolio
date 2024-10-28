@@ -8,10 +8,10 @@ STYLES
 ████████████████████████████████████████████████████████████████████████████████████████████████████ */
 const projectsContainerStyle = "px-[10%] xl:px-[20%] py-40 flex flex-col gap-40 justify-center items-center bg-lightSecondary dark:bg-darkSecondary border-y border-lightSecondaryBorder dark:border-darkSecondaryBorder overflow-x-hidden";
 
-const projectsContainerTitleContainerStyle = "gap-2 flex flex-col md:flex-col w-full gap-4 md:gap-12 md:items-center";
-const projectsContainerTitleStyle = "text-5xl xl:text-9xl font-black uppercase font-heading text-lightText dark:text-darkText flex flex-col";
+const projectsContainerTitleContainerStyle = "gap-2 flex flex-col md:flex-col w-full gap-4 md:gap-12 items-center";
+const projectsContainerTitleStyle = "text-4xl md:text-7xl lg:text-8xl xl:text-9xl font-black uppercase font-heading text-lightText dark:text-darkText flex flex-col text-center";
 const projectsContainerTitleSpanStyle = "text-lightHeading dark:text-darkHeading";
-const projectsContainerPhraseStyle = "text-xl md:text-3xl max-w-3xl font-default font-normal italic text-lightText dark:text-darkText mb-16";
+const projectsContainerPhraseStyle = "text-xl md:text-3xl lg:text-4xl xl:text-4xl max-w-3xl font-default font-normal italic text-lightText dark:text-darkText mb-16";
 
 /* ████████████████████████████████████████████████████████████████████████████████████████████████████
 PROJECTS COMPONENT

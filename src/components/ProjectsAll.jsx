@@ -28,16 +28,18 @@ import { FaPaintbrush } from 'react-icons/fa6';
 STYLES
 ████████████████████████████████████████████████████████████████████████████████████████████████████ */
 const projectsContainerStyle = "px-[10%] xl:px-[20%] py-40 flex flex-col gap-24 justify-center items-center bg-lightSecondary dark:bg-darkSecondary border-b border-lightSecondaryBorder dark:border-darkSecondaryBorder overflow-x-hidden";
-const projectsContainerTitleContainerStyle = "gap-2 flex flex-col md:flex-row w-full gap-4 md:gap-12 md:items-start";
-const projectsContainerTitleStyle = "text-5xl xl:text-6xl font-black uppercase font-heading text-lightText dark:text-darkText flex flex-col";
+
+const projectsContainerTitleContainerStyle = "gap-2 flex flex-col md:flex-col w-full gap-4 md:gap-12 items-center";
+const projectsContainerTitleStyle = "text-4xl md:text-7xl lg:text-8xl xl:text-9xl font-black uppercase font-heading text-lightText dark:text-darkText flex flex-col text-center";
 const projectsContainerTitleSpanStyle = "text-lightHeading dark:text-darkHeading";
-const projectsContainerPhraseStyle = "text-xl md:text-2xl font-default font-normal italic text-lightText dark:text-darkText";
+const projectsContainerPhraseStyle = "text-xl md:text-3xl lg:text-4xl xl:text-4xl max-w-3xl font-default font-normal italic text-lightText dark:text-darkText";
+
 const projectsContainerMenuStyle = "flex flex-col justify-center items-center gap-4";
-const projectsContainerMenuTabsStyle = "flex flex-row items-center border-2 border-lightSecondaryBorder dark:border-darkSecondaryBorder rounded-xl font-heading font-medium text-md md:text-2xl lg:text-3xl text-lightSubheading dark:text-darkSubheading";
-const projectsContainerMenuTabSubtitleStyle = "font-medium font-heading text-lightSubheading dark:text-darkSubheading text-sm md:text-lg lg:text-xl"
-const projectsContainerMenuTabInactiveStyle = "py-2 px-4 hover:text-lightHeading dark:hover:text-darkHeading duration-200";
-const projectsContainerMenuTabActiveStyle = "py-2 px-4 text-lightHeading dark:text-darkHeading duration-200 h-full";
-const projectsGridContainerStyle = "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6";
+const projectsContainerMenuTabsStyle = "flex flex-row items-center border-2 border-lightSecondaryBorder dark:border-darkSecondaryBorder rounded-xl font-heading font-medium text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-lightSubheading dark:text-darkSubheading";
+const projectsContainerMenuTabSubtitleStyle = "font-medium font-heading text-lightSubheading dark:text-darkSubheading text-lg md:text-xl lg:text-2xl xl:text-2xl"
+const projectsContainerMenuTabInactiveStyle = "py-2 px-3 hover:text-lightHeading dark:hover:text-darkHeading duration-200";
+const projectsContainerMenuTabActiveStyle = "py-2 px-3 text-lightHeading dark:text-darkHeading duration-200 h-full";
+const projectsGridContainerStyle = "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-6 w-full";
 
 /* ████████████████████████████████████████████████████████████████████████████████████████████████████
 ALL PROJECTS COMPONENT
@@ -70,7 +72,7 @@ function ProjectsAll() {
                     <button id="components-category" className={activeTab === "Components" ? projectsContainerMenuTabActiveStyle : projectsContainerMenuTabInactiveStyle} onClick={() => handleActiveTab("Components")}><FaPuzzlePiece /></button>
                     <button id="tools-category" className={activeTab === "Tools" ? projectsContainerMenuTabActiveStyle : projectsContainerMenuTabInactiveStyle} onClick={() => handleActiveTab("Tools")}><FaToolbox /></button>
                     <button id="games-category" className={activeTab === "Games" ? projectsContainerMenuTabActiveStyle : projectsContainerMenuTabInactiveStyle} onClick={() => handleActiveTab("Games")}><IoGameController /></button>
-                    <button id="art-category" className={activeTab === "Creative" ? projectsContainerMenuTabActiveStyle : projectsContainerMenuTabInactiveStyle} onClick={() => handleActiveTab("Creative")}><FaPaintbrush /></button>
+                    {/* <button id="art-category" className={activeTab === "Creative" ? projectsContainerMenuTabActiveStyle : projectsContainerMenuTabInactiveStyle} onClick={() => handleActiveTab("Creative")}><FaPaintbrush /></button> */}
                 </div>
 
                 <h3 className={projectsContainerMenuTabSubtitleStyle}>{activeTab}</h3>

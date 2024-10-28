@@ -10,7 +10,7 @@ STYLES
 ████████████████████████████████████████████████████████████████████████████████████████████████████ */
 const carouselContainerStyle = "w-full h-max flex flex-col gap-12 gap-40";
 
-const carouselSliderStyle = "flex flex-row justify-center";
+const carouselSliderStyle = "flex flex-row justify-center rotate-90 md:rotate-0";
 const carouselSlideLeftStyle = "bg-neutral-800 p-1 rounded-lg w-full md:w-96 h-max md:scale-[120%] opacity-50";
 const carouselSlideCenterStyle = "bg-neutral-800 p-1 rounded-lg w-full md:w-96 h-max scale-[300%] md:scale-[260%] lg:scale-[220%] opacity-100 shadow-lg z-10";
 const carouselSlideRightStyle = "bg-neutral-800 p-1 rounded-lg w-full md:w-96 h-max md:scale-[120%] opacity-50";

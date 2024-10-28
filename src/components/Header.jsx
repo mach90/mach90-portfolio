@@ -1,7 +1,8 @@
 /* ████████████████████████████████████████████████████████████████████████████████████████████████████
 IMPORTS
 ████████████████████████████████████████████████████████████████████████████████████████████████████ */
-import PortfolioSVG from "../img/portfolio.svg";
+import PortfolioSVGLight from "../img/portfolio-light.svg";
+import PortfolioSVGDark from "../img/portfolio-dark.svg";
 // import { FaGithub } from "react-icons/fa";
 
 /* ████████████████████████████████████████████████████████████████████████████████████████████████████
@@ -9,7 +10,8 @@ STYLES
 ████████████████████████████████████████████████████████████████████████████████████████████████████ */
 const headerContainerStyle = "px-4 pt-40 pb-24 lg:px-[10%] xl:px-[20%] flex flex-col gap-24 justify-center items-center bg-lightPrimary dark:bg-darkPrimary bg-opacity-0 dark:bg-opacity-70 h-screen";
 
-const headerPortfolio = "w-full animate-fade-in fill-white";
+const headerPortfolioLight = "w-full animate-fade-in fill-white block dark:hidden";
+const headerPortfolioDark = "w-full animate-fade-in fill-white hidden dark:block";
 
 // const headerDescriptionContainerStyle = "w-full grid grid-cols-3 gap-0";
 
@@ -33,7 +35,8 @@ function Header() {
     return (
         <>
             <header className={headerContainerStyle}>         
-                <img id="portfolioSVG" src={PortfolioSVG} alt="Portfolio SVG" width="100%" className={headerPortfolio} />
+                <img id="portfolioSVG" src={PortfolioSVGLight} alt="Portfolio SVG" width="100%" className={headerPortfolioLight} />
+                <img id="portfolioSVG" src={PortfolioSVGDark} alt="Portfolio SVG" width="100%" className={headerPortfolioDark} />
 
                 {/* <div className={headerDescriptionContainerStyle}>
                     <div className={headerDescriptionCardStyle}>
