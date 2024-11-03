@@ -2,7 +2,7 @@
 IMPORTS
 ████████████████████████████████████████████████████████████████████████████████████████████████████ */
 /* //////////////////////////////////////////////////
-IMAGES - THUMBNAILS
+IMAGES - SCREENSHOTS (full resolution)
 ////////////////////////////////////////////////// */
 import TravelFormGenerator from "../img/projects/perso/P0316-travel-plan-form.avif";
 import BentoEnviro from "../img/projects/perso/P0330-bento-enviro.avif";
@@ -22,24 +22,31 @@ import FastReactPizza from "../img/projects/formation/P0323-fast-react-pizza.avi
 import TheWildOasis from "../img/projects/formation/P0324-the-wild-oasis.avif";
 
 /* //////////////////////////////////////////////////
-IMAGES - SCREENSHOTS (full resolution)
+IMAGES - THUMBNAILS
 ////////////////////////////////////////////////// */
-import TravelFormGeneratorMobile from "../img/projects/perso/P0316-travel-plan-form-thumbnail.avif";
-import BentoEnviroMobile from "../img/projects/perso/P0330-bento-enviro-thumbnail.avif";
-import PrimusLitePlusMobile from "../img/projects/perso/prime-lite-plus.webflow.io-thumbnail.avif";
-import PigGameMobile from "../img/projects/formation/P0202-pig-game-thumbnail.avif";
-import UnderscoreToCamelMobile from "../img/projects/formation/P0203-underscore2camel-thumbnail.avif";
-import GuessMyNumberMobile from "../img/projects/formation/P0208-guess-my-number-thumbnail.avif";
-import BankistMobile from "../img/projects/formation/P0210-bankist-thumbnail.avif";
-import PizzaMenuMobile from "../img/projects/formation/P0301-pizza-menu-thumbnail.avif";
-import TravelListMobile from "../img/projects/formation/P0305-travel-list-thumbnail.avif";
-import TipCalculatorMobile from "../img/projects/formation/P0308-tip-calculator-thumbnail.avif";
-import EatNSplitMobile from "../img/projects/formation/P0309-eat-n-split-thumbnail.avif";
-import UsePopcornMobile from "../img/projects/formation/P0310-usepopcorn-thumbnail.avif";
-import ReactQuizMobile from "../img/projects/formation/P0317-react-quiz-thumbnail.avif";
-import WorldwiseMobile from "../img/projects/formation/P0319-worldwise-thumbnail.avif";
-import FastReactPizzaMobile from "../img/projects/formation/P0323-fast-react-pizza-thumbnail.avif";
-import TheWildOasisMobile from "../img/projects/formation/P0324-the-wild-oasis-thumbnail.avif";
+import TravelFormGeneratorThumbnail from "../img/projects/perso/P0316-travel-plan-form-thumbnail.avif";
+import BentoEnviroThumbnail from "../img/projects/perso/P0330-bento-enviro-thumbnail.avif";
+import PrimusLitePlusThumbnail from "../img/projects/perso/prime-lite-plus.webflow.io-thumbnail.avif";
+import PigGameThumbnail from "../img/projects/formation/P0202-pig-game-thumbnail.avif";
+import UnderscoreToCamelThumbnail from "../img/projects/formation/P0203-underscore2camel-thumbnail.avif";
+import GuessMyNumberThumbnail from "../img/projects/formation/P0208-guess-my-number-thumbnail.avif";
+import BankistThumbnail from "../img/projects/formation/P0210-bankist-thumbnail.avif";
+import PizzaMenuThumbnail from "../img/projects/formation/P0301-pizza-menu-thumbnail.avif";
+import TravelListThumbnail from "../img/projects/formation/P0305-travel-list-thumbnail.avif";
+import TipCalculatorThumbnail from "../img/projects/formation/P0308-tip-calculator-thumbnail.avif";
+import EatNSplitThumbnail from "../img/projects/formation/P0309-eat-n-split-thumbnail.avif";
+import UsePopcornThumbnail from "../img/projects/formation/P0310-usepopcorn-thumbnail.avif";
+import ReactQuizThumbnail from "../img/projects/formation/P0317-react-quiz-thumbnail.avif";
+import WorldwiseThumbnail from "../img/projects/formation/P0319-worldwise-thumbnail.avif";
+import FastReactPizzaThumbnail from "../img/projects/formation/P0323-fast-react-pizza-thumbnail.avif";
+import TheWildOasisThumbnail from "../img/projects/formation/P0324-the-wild-oasis-thumbnail.avif";
+
+/* //////////////////////////////////////////////////
+IMAGES - THUMBNAILS MOBILE
+////////////////////////////////////////////////// */
+import TravelFormGeneratorThumbnailMobile from "../img/projects/perso/P0316-travel-plan-form-thumbnail-mobile.avif";
+import BentoEnviroThumbnailMobile from "../img/projects/perso/P0330-bento-enviro-thumbnail-mobile.avif";
+import PrimusLitePlusThumbnailMobile from "../img/projects/perso/prime-lite-plus.webflow.io-thumbnail-mobile.avif";
 
 /* //////////////////////////////////////////////////
 VIDEO
@@ -51,9 +58,9 @@ import PrimusLitePlusMP4 from "../video/primusliteplus.mp4";
 /* //////////////////////////////////////////////////
 VIDEO FOR MOBILE (SM screen size)
 ////////////////////////////////////////////////// */
-// import BentoEnviroMP4Mobile from "../video/bentoenviro-mobile.mp4";
-// import TfGenMP4Mobile from "../video/tfgen-mobile.mp4";
-// import PrimusLitePlusMP4Mobile from "../video/primusliteplus-mobile.mp4";
+import BentoEnviroMP4Mobile from "../video/bentoenviro-mobile.mp4";
+import TfGenMP4Mobile from "../video/tfgen-mobile.mp4";
+import PrimusLitePlusMP4Mobile from "../video/primusliteplus-mobile.mp4";
 
 /* ████████████████████████████████████████████████████████████████████████████████████████████████████
 PROJECTS LIST DATA
@@ -66,10 +73,11 @@ const projectsList = [
         description: "A web form that converts user input into a formatted and printable Travel Form (.pdf) using React-pdf library.",
         type: ["All projects", "Apps"],
         techs: ["React", "Tailwind", "React-pdf", "Spline", "Blender"],
-        thumbnail: TravelFormGeneratorMobile,
+        thumbnail: TravelFormGeneratorThumbnail,
+        thumbnailMobile: TravelFormGeneratorThumbnailMobile,
         screenshot: TravelFormGenerator,
         video: TfGenMP4,
-        videoMobile: "",
+        videoMobile: TfGenMP4Mobile,
         showcased: true,
         link: "https://travelformgenerator.netlify.app/",
         github: "https://github.com/mach90/TFgen",
@@ -81,10 +89,11 @@ const projectsList = [
         description: "Aggregating diverse environmental data from multiple APIs and presenting it through a concise Bento-style UI.",
         type: ["All projects", "Apps"],
         techs: ["React", "Tailwind"],
-        thumbnail: BentoEnviroMobile,
+        thumbnail: BentoEnviroThumbnail,
+        thumbnailMobile: BentoEnviroThumbnailMobile,
         screenshot: BentoEnviro,
         video: BentoEnviroMP4,
-        videoMobile: "",
+        videoMobile: BentoEnviroMP4Mobile,
         showcased: true,
         link: "https://bento-enviro.netlify.app/",
         github: "https://github.com/mach90/bento-enviro",
@@ -97,10 +106,11 @@ const projectsList = [
         description: "Transformed a Primus stove e-commerce product page into a product showcase on Webflow, preserving the brand's visual identity while enhancing the presentation.",
         type: ["All projects", "Websites"],
         techs: ["Webflow", "Figma", "Spline", "Blender"],
-        thumbnail: PrimusLitePlusMobile,
+        thumbnail: PrimusLitePlusThumbnail,
+        thumbnailMobile: PrimusLitePlusThumbnailMobile,
         screenshot: PrimusLitePlus,
         video: PrimusLitePlusMP4,
-        videoMobile: "",
+        videoMobile: PrimusLitePlusMP4Mobile,
         showcased: true,
         link: "https://prime-lite-plus.webflow.io/",
         github: "",
@@ -112,7 +122,8 @@ const projectsList = [
         description: "Frontend/Backend hotel management app.",
         type: ["All projects", "Apps"],
         techs: ["React", "Supabase"],
-        thumbnail: TheWildOasisMobile,
+        thumbnail: TheWildOasisThumbnail,
+        thumbnailMobile: "",
         screenshot: TheWildOasis,
         video: "",
         videoMobile: "",
@@ -127,7 +138,8 @@ const projectsList = [
         description: "Search, rate and add movies to your watchlist.",
         type: ["All projects", "Apps"],
         techs: ["React"],
-        thumbnail: UsePopcornMobile,
+        thumbnail: UsePopcornThumbnail,
+        thumbnailMobile: "",
         screenshot: UsePopcorn,
         video: "",
         videoMobile: "",
@@ -142,7 +154,8 @@ const projectsList = [
         description: "Bank account interface with transactions.",
         type: ["All projects", "Apps"],
         techs: ["JavaScript"],
-        thumbnail: BankistMobile,
+        thumbnail: BankistThumbnail,
+        thumbnailMobile: "",
         screenshot: Bankist,
         video: "",
         videoMobile: "",
@@ -157,7 +170,8 @@ const projectsList = [
         description: "Pizza shop app.",
         type: ["All projects", "Apps"],
         techs: ["React"],
-        thumbnail: FastReactPizzaMobile,
+        thumbnail: FastReactPizzaThumbnail,
+        thumbnailMobile: "",
         screenshot: FastReactPizza,
         video: "",
         videoMobile: "",
@@ -172,7 +186,8 @@ const projectsList = [
         description: "Simple backpack gear list.",
         type: ["All projects", "Apps"],
         techs: ["React"],
-        thumbnail: TravelListMobile,
+        thumbnail: TravelListThumbnail,
+        thumbnailMobile: "",
         screenshot: TravelList,
         video: "",
         videoMobile: "",
@@ -187,7 +202,8 @@ const projectsList = [
         description: "Map app to keep track of your travel locations, using Leaflet.",
         type: ["All projects", "Apps"],
         techs: ["React"],
-        thumbnail: WorldwiseMobile,
+        thumbnail: WorldwiseThumbnail,
+        thumbnailMobile: "",
         screenshot: Worldwise,
         video: "",
         videoMobile: "",
@@ -202,7 +218,8 @@ const projectsList = [
         description: "Small app to keep track of how much you and your friends owe each others.",
         type: ["All projects", "Tools", "Apps"],
         techs: ["React"],
-        thumbnail: EatNSplitMobile,
+        thumbnail: EatNSplitThumbnail,
+        thumbnailMobile: "",
         screenshot: EatNSplit,
         video: "",
         videoMobile: "",
@@ -217,7 +234,8 @@ const projectsList = [
         description: "Small quizz about React.",
         type: ["All projects", "Games"],
         techs: ["React"],
-        thumbnail: ReactQuizMobile,
+        thumbnail: ReactQuizThumbnail,
+        thumbnailMobile: "",
         screenshot: ReactQuiz,
         video: "",
         videoMobile: "",
@@ -232,7 +250,8 @@ const projectsList = [
         description: "Pizza menu depending on hour and availability of meal.",
         type: ["All projects", "Websites", "Apps"],
         techs: ["React"],
-        thumbnail: PizzaMenuMobile,
+        thumbnail: PizzaMenuThumbnail,
+        thumbnailMobile: "",
         screenshot: PizzaMenu,
         video: "",
         videoMobile: "",
@@ -247,7 +266,8 @@ const projectsList = [
         description: "Simply calculate how much you should tip.",
         type: ["All projects", "Tools"],
         techs: ["React"],
-        thumbnail: TipCalculatorMobile,
+        thumbnail: TipCalculatorThumbnail,
+        thumbnailMobile: "",
         screenshot: TipCalculator,
         video: "",
         videoMobile: "",
@@ -262,7 +282,8 @@ const projectsList = [
         description: "Classic Guess my number game.",
         type: ["All projects", "Games"],
         techs: ["JavaScript"],
-        thumbnail: GuessMyNumberMobile,
+        thumbnail: GuessMyNumberThumbnail,
+        thumbnailMobile: "",
         screenshot: GuessMyNumber,
         video: "",
         videoMobile: "",
@@ -277,7 +298,8 @@ const projectsList = [
         description: "A simple pig game.",
         type: ["All projects", "Games"],
         techs: ["JavaScript"],
-        thumbnail: PigGameMobile,
+        thumbnail: PigGameThumbnail,
+        thumbnailMobile: "",
         screenshot: PigGame,
         video: "",
         videoMobile: "",
@@ -292,7 +314,8 @@ const projectsList = [
         description: "under_score to camelCase converter.",
         type: ["All projects", "Tools"],
         techs: ["JavaScript"],
-        thumbnail: UnderscoreToCamelMobile,
+        thumbnail: UnderscoreToCamelThumbnail,
+        thumbnailMobile: "",
         screenshot: UnderscoreToCamel,
         video: "",
         videoMobile: "",

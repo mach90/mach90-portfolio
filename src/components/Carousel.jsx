@@ -10,9 +10,9 @@ STYLES
 ████████████████████████████████████████████████████████████████████████████████████████████████████ */
 const carouselContainerStyle = "w-full h-max flex flex-col gap-12 gap-40";
 
-const carouselSliderStyle = "flex flex-row justify-center rotate-90 md:rotate-0";
+const carouselSliderStyle = "flex flex-row justify-center rotate-0 md:rotate-0";
 const carouselSlideLeftStyle = "bg-neutral-800 p-1 rounded-lg w-full md:w-96 h-max md:scale-[120%] opacity-50";
-const carouselSlideCenterStyle = "bg-neutral-800 p-1 rounded-lg w-full md:w-96 h-max scale-[300%] md:scale-[260%] lg:scale-[220%] opacity-100 shadow-lg z-10";
+const carouselSlideCenterStyle = "bg-neutral-800 p-1 rounded-lg w-full md:w-96 h-max scale-[250%] md:scale-[260%] lg:scale-[220%] opacity-100 shadow-lg z-10";
 const carouselSlideRightStyle = "bg-neutral-800 p-1 rounded-lg w-full md:w-96 h-max md:scale-[120%] opacity-50";
 
 const carouselPaginationStyle = "flex justify-center gap-4";
@@ -25,7 +25,7 @@ function Carousel() {
     /* //////////////////////////////////////////////////
     DATA 
     ////////////////////////////////////////////////// */
-    const showcasedProjects = projectsData.filter((proj) => proj.showcased === true).map((proj, i) => {return {id: i, title: proj.title, thumbnail: proj.thumbnail, video: proj.video}});
+    const showcasedProjects = projectsData.filter((proj) => proj.showcased === true).map((proj, i) => {return {id: i, title: proj.title, thumbnail: proj.thumbnail, thumbnailMobile: proj.thumbnailMobile, video: proj.video, videoMobile: proj.videoMobile}});
 
     /* //////////////////////////////////////////////////
     STATE
@@ -77,16 +77,27 @@ function Carousel() {
         <div id="carousel" className={carouselContainerStyle}>
             <div id="carousel-slider" className={carouselSliderStyle}>
                 <div id="carousel-slide-left" className={carouselSlideLeftStyle} onClick={handlePreviousSlide}>
-                    <video poster={showcasedProjects.at(leftSlide).thumbnail}><source src={showcasedProjects.at(leftSlide).video} type="video/mp4" />Your browser does not support the video tag.</video>
+                    <video poster={showcasedProjects.at(leftSlide).thumbnail}>
+                        <source media="(min-width: 768px)" src={showcasedProjects.at(leftSlide).video} type="video/mp4" />
+                        <source src={showcasedProjects.at(leftSlide).videoMobile} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
 
                 <div id="carousel-slide-center" className={carouselSlideCenterStyle}>
-                    {/* <img src={showcasedProjects.at(centerSlide).thumbnail} /> */}
-                    <video ref={videoRef} autoPlay loop muted playsInline poster={showcasedProjects.at(centerSlide).thumbnail}><source src={showcasedProjects.at(centerSlide).video} type="video/mp4" />Your browser does not support the video tag.</video>
+                    <video ref={videoRef} autoPlay loop muted playsInline poster={showcasedProjects.at(centerSlide).thumbnail}>
+                        <source media="(min-width: 768px)" src={showcasedProjects.at(centerSlide).video} type="video/mp4" />
+                        <source src={showcasedProjects.at(centerSlide).videoMobile} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
 
                 <div id="carousel-slide-right" className={carouselSlideRightStyle} onClick={handleNextSlide}>
-                    <video poster={showcasedProjects.at(rightSlide).thumbnail}><source src={showcasedProjects.at(rightSlide).video} type="video/mp4" />Your browser does not support the video tag.</video>
+                    <video poster={showcasedProjects.at(rightSlide).thumbnail}>
+                        <source media="(min-width: 768px)" src={showcasedProjects.at(rightSlide).video} type="video/mp4" />
+                        <source src={showcasedProjects.at(rightSlide).videoMobile} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
 
