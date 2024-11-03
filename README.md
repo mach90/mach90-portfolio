@@ -6,7 +6,7 @@
 
 ## TO DO
 - [x] Modal 🟢
-- [ ] New videos and better thumbnail quality 🟠
+- [x] New videos and better thumbnail quality 🟢
 
 ### LEGEND
 🟢 100% done
