@@ -11,6 +11,7 @@ import LogoFigma from '../img/techlogos/techlogo-figma.png';
 import LogoTailwind from '../img/techlogos/techlogo-tailwind.png';
 import LogoSupabase from '../img/techlogos/techlogo-supabase.png';
 import LogoNodejs from '../img/techlogos/techlogo-nodejs.png';
+import LogoExpressjs from '../img/techlogos/techlogo-expressjs.png';
 import LogoMongodb from '../img/techlogos/techlogo-mongodb.png';
 import LogoPhotoshop from '../img/techlogos/techlogo-ps.png';
 import LogoIllustrator from '../img/techlogos/techlogo-ai.png';
@@ -37,7 +38,7 @@ const stacksLists = [
         ]
     },
     {
-        listTitle: "UI & PAO",
+        listTitle: "UI & DTP",
         stacks: [
             { techName: "Figma", techLogo: LogoFigma, certification: false },
             { techName: "Tailwind", techLogo: LogoTailwind, certification: false },
@@ -50,12 +51,13 @@ const stacksLists = [
         listTitle: "Backend",
         stacks: [
             { techName: "Supabase", techLogo: LogoSupabase, certification: false },
-            // { techName: "NodeJS", techLogo: LogoNodejs, certification: false },
+            { techName: "NodeJS", techLogo: LogoNodejs, certification: "https://www.udemy.com/certificate/UC-a7743a64-2ab1-4e3e-844a-7605d9d7c08a/" },
+            { techName: "Express", techLogo: LogoExpressjs, certification: "https://www.udemy.com/certificate/UC-a7743a64-2ab1-4e3e-844a-7605d9d7c08a/" },
             // { techName: "MongoDB", techLogo: LogoMongodb, certification: false },
         ]
     },
     {
-        listTitle: "3D & CAO",
+        listTitle: "3D & CAD",
         stacks: [
             { techName: "Blender", techLogo: LogoBlender, certification: false },
             { techName: "Painter", techLogo: LogoSubstancePainter, certification: false },

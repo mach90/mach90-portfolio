@@ -20,6 +20,7 @@ import ReactQuiz from "../img/projects/formation/P0317-react-quiz.avif";
 import Worldwise from "../img/projects/formation/P0319-worldwise.avif";
 import FastReactPizza from "../img/projects/formation/P0323-fast-react-pizza.avif";
 import TheWildOasis from "../img/projects/formation/P0324-the-wild-oasis.avif";
+import Natours from "../img/projects/formation/P0401-natours.avif";
 
 /* //////////////////////////////////////////////////
 IMAGES - THUMBNAILS
@@ -40,6 +41,8 @@ import ReactQuizThumbnail from "../img/projects/formation/P0317-react-quiz-thumb
 import WorldwiseThumbnail from "../img/projects/formation/P0319-worldwise-thumbnail.avif";
 import FastReactPizzaThumbnail from "../img/projects/formation/P0323-fast-react-pizza-thumbnail.avif";
 import TheWildOasisThumbnail from "../img/projects/formation/P0324-the-wild-oasis-thumbnail.avif";
+import NatoursThumbnail from "../img/projects/formation/P0401-natours-thumbnail.avif";
+
 
 /* //////////////////////////////////////////////////
 IMAGES - THUMBNAILS MOBILE
@@ -129,6 +132,22 @@ const projectsList = [
         videoMobile: "",
         showcased: false,
         link: "",
+        github: "",
+    },
+    {
+        title: "Natours",
+        status: "In development",
+        version: "0.1.0",
+        description: "Login: laura@example.com / Password: test123456789",
+        type: ["All projects", "Apps"],
+        techs: ["Nodejs", "Expressjs", "MongoDB"],
+        thumbnail: NatoursThumbnail,
+        thumbnailMobile: "",
+        screenshot: Natours,
+        video: "",
+        videoMobile: "",
+        showcased: false,
+        link: "https://natours-test-mach90.onrender.com/",
         github: "",
     },
     {

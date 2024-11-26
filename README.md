@@ -7,6 +7,7 @@
 ## TO DO
 - [x] Modal 🟢
 - [x] New videos and better thumbnail quality 🟢
+- [ ] Keywords list a-z with search 🔴
 
 ### LEGEND
 🟢 100% done
