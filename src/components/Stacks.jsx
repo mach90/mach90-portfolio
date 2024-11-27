@@ -2,7 +2,13 @@
 IMPORTS
 ████████████████████████████████████████████████████████████████████████████████████████████████████ */
 import stacksData from "../data/stacksData";
+import SearchList from "./SearchList";
 import { GiDiploma } from 'react-icons/gi';
+
+/* ████████████████████████████████████████████████████████████████████████████████████████████████████
+ANIMATION
+████████████████████████████████████████████████████████████████████████████████████████████████████ */
+const animation = <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=500&size=30&duration=2000&color=676767&background=A1A1A1&center=true&vCenter=true&width=200&height=35&lines=technology;tool;software;framework;language;library;thing..." alt="Typing SVG" />;
 
 /* ████████████████████████████████████████████████████████████████████████████████████████████████████
 STACKS COMPONENT
@@ -15,9 +21,9 @@ function Stacks() {
 
     const stacksTitleStyle = "font-heading px-6 py-2 rounded-full border-4 border-lightSecondaryBorder dark:border-darkSecondaryBorder uppercase text-center text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-lightSubheading dark:text-darkSubheading w-max";
 
-    const stacksSubtitleStyle = "font-default font-medium text-xl md:text-2xl lg:text-3xl xl:text-4xl max-w-xl text-lightText dark:text-darkText text-center";
+    const stacksSubtitleStyle = "flex flex-col items-center gap-2 font-default font-medium text-xl md:text-2xl lg:text-3xl xl:text-4xl max-w-xl text-lightText dark:text-darkText text-center";
 
-    const stacksListsContainerStyle = "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-center w-full";
+    const stacksListsContainerStyle = "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-center w-full pb-12 border-b border-lightSecondaryBorder dark:border-darkSecondaryBorder";
     const stacksListContainerStyle = "flex flex-col gap-0 p-0 w-full duration-300"
     const stacksListContainerTopStyle = "bg-lightPrimary dark:bg-darkPrimary h-16 card-clip-path border-b border-lightSecondaryBorder dark:border-darkSecondaryBorder";
     const stacksListTitleStyle = "bg-lightPrimary dark:bg-darkPrimary text-lightSubheading dark:text-darkSubheading uppercase font-heading font-black text-xl border-b border-lightSecondaryBorder dark:border-darkSecondaryBorder px-2 py-2 text-center";
@@ -51,6 +57,8 @@ function Stacks() {
                     </div>
                 ))}
             </div>
+            <p className={stacksSubtitleStyle}>Have I ever used this {animation} ?</p>
+            <SearchList/>
         </section>
     );
 };

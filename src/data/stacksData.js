@@ -50,10 +50,10 @@ const stacksLists = [
     {
         listTitle: "Backend",
         stacks: [
-            { techName: "Supabase", techLogo: LogoSupabase, certification: false },
             { techName: "NodeJS", techLogo: LogoNodejs, certification: "https://www.udemy.com/certificate/UC-a7743a64-2ab1-4e3e-844a-7605d9d7c08a/" },
             { techName: "Express", techLogo: LogoExpressjs, certification: "https://www.udemy.com/certificate/UC-a7743a64-2ab1-4e3e-844a-7605d9d7c08a/" },
-            // { techName: "MongoDB", techLogo: LogoMongodb, certification: false },
+            { techName: "Supabase", techLogo: LogoSupabase, certification: false },
+            { techName: "MongoDB", techLogo: LogoMongodb, certification: false },
         ]
     },
     {
