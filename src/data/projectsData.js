@@ -131,7 +131,7 @@ const projectsList = [
         video: "",
         videoMobile: "",
         showcased: false,
-        link: "",
+        link: "https://tutored-the-wild-oasis.netlify.app/",
         github: "",
     },
     {
