@@ -67,7 +67,7 @@ export default {
       animation: {
         'fade-in': 'fade-in 1.5s ease-out',
         'infinite-scroll': 'infinite-scroll 40s linear infinite',
-      }
+      },
     },
   },
   plugins: [],

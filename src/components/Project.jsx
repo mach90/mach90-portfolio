@@ -20,7 +20,7 @@ const projectInfosLinksStyle = "flex flex-row gap-2 p-2 rounded-full font-defaul
 /* ████████████████████████████████████████████████████████████████████████████████████████████████████
 PROJECT COMPONENT
 ████████████████████████████████████████████████████████████████████████████████████████████████████ */
-export default function Project({title, description, status, version, techs, thumbnail, screenshot, link, github}) {
+export default function Project({title, description, status, team, version, techs, thumbnail, screenshot, link, github}) {
     /* //////////////////////////////////////////////////
     STATE
     ////////////////////////////////////////////////// */
@@ -64,6 +64,7 @@ export default function Project({title, description, status, version, techs, thu
                     {github && <a id="github-project" className={projectInfosLinksStyle} href={github} target="_blank" rel="noopener noreferrer" ><FaGithub /></a>}
                 </div>
             </div>
+            <div className="absolute right-0 top-2 uppercase text-sm bg-stone-700 text-stone-300 pr-2 pl-6 py-1 [clip-path:polygon(100%_0,100%_50%,100%_100%,0%_100%,10%_50%,0%_0%)] shadow-md shadow-stone-900 font-bold font-default">{team}</div>
             {showModal && <Modal screenshot={screenshot} />}
         </div>
     );
